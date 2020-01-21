@@ -2102,7 +2102,7 @@ const gameWords = [
 ]
     // console.log(threeLetterWordsFromWord20Array);
     
-    console.log(gameWords);
+    // console.log(gameWords);
 
 
 
@@ -2123,69 +2123,6 @@ const gameWords = [
 // var LetterWordsFromWord_Array = LetterWordsFromWord_.split("\n")
 // console.log(LetterWordsFromWord_Array);
 
-// // Word 
-// word =
-// sixLetterWordsFromWord = 
-
-// // 
-// fiveLetterWordsFromWord =
-
-// // 
-// fourLetterWordsFromWord = 
-
-// //
-// threeLetterWordsFromWord =
-
-// // 
-// var LetterWordsFromWord_Array = LetterWordsFromWord_.split("\n")
-// console.log(LetterWordsFromWord_Array);
-
-// // Word 
-// word =
-// sixLetterWordsFromWord = 
-
-// // 
-// fiveLetterWordsFromWord =
-
-// // 
-// fourLetterWordsFromWord = 
-
-// //
-// threeLetterWordsFromWord =
-
-// // 
-// var LetterWordsFromWord_Array = LetterWordsFromWord_.split("\n")
-// console.log(LetterWordsFromWord_Array);
-
-// // Word 
-// word =
-// sixLetterWordsFromWord = 
-
-// // 
-// fiveLetterWordsFromWord =
-
-// // 
-// fourLetterWordsFromWord = 
-
-// //
-// threeLetterWordsFromWord =
-
-// // 
-// var LetterWordsFromWord_Array = LetterWordsFromWord_.split("\n")
-// console.log(LetterWordsFromWord_Array);
-
-// // Word 
-// word =
-// sixLetterWordsFromWord = 
-
-// // 
-// fiveLetterWordsFromWord =
-
-// // 
-// fourLetterWordsFromWord = 
-
-// //
-// threeLetterWordsFromWord =
 
 // // 
 // var LetterWordsFromWord_Array = LetterWordsFromWord_.split("\n")
@@ -2212,7 +2149,7 @@ const gameWords = [
 
 
 
-console.log(threeLetterWordsFromWord20Array.length);
+// console.log(threeLetterWordsFromWord20Array.length);
 
 
 
@@ -2232,9 +2169,10 @@ let twentyRandomSixLetterWordArray = ["spoken", "formal", "detect", "prison", "n
 
 
 // Word from which will display Letters to Work With
-let randomSixLetterWordHere = twentyRandomSixLetterWordArray[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
-// console.log(randomSixLetterWordHere);
+let randomLevel = gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
 
+let randomSixLetterWordHere = randomLevel.startingWord;
+console.log(randomLevel.startingWord);
 
 
 
@@ -2252,171 +2190,8 @@ function scrambleWord (string) {
 
 }
 
-var scrambledWordToDisplay = scrambleWord(randomSixLetterWordHere);
-
-console.log(randomSixLetterWordHere);
+var scrambledWordToDisplay = scrambleWord(randomLevel.startingWord);
 
 document.getElementById("showLettersToWorkWith").textContent = scrambledWordToDisplay;
 
-
-
-// var scrambledWordToDisplay = document.getElementById("showLettersToWorkWith").textContent;
-
-
-
-
-
-
-
-
 console.log(document.getElementById("showLettersToWorkWith").textContent);
-
-// console.log(wordToDisplay);
-
-var input = document.getElementById("wordInput").textContent;
-
-document.getElementById("enterButton").onclick = function submitEntry(input) {
-    console.log("clicked");
-}
-// var input = document.getElementById("wordInput").textContent;
-//     switch (input) {
-//         case input.length === 6:
-//             .includes
-//             break;
-//         case input.length === 5:
-//             .includes
-//             break;
-//         case input.length === 4:
-//             .includes
-//             break;
-//         case input.length === 3:
-//             .includes
-//             break
-//         default:
-//             console.log("You need to enter a 3 to 6 letter word.");
-
-//     }
-// }
-
-// console.log(document.getElementById("wordInput").textContent);
-
-
-
-const expr = randomSixLetterWordHere;
-// switch (expr) {
-//     // Word1
-//     case "formal":
-
-//     break;
-
-//     // Word2
-//     case "spoken":
-
-//     break;
-
-//     // Word3
-//     case "detect":
-
-//     break;
-
-//     // Word 4
-//     case "prison":
-
-//     break;
-
-//      // Word 5
-//      case "nobody":
-
-//     break;
-
-//     // Word 6
-//     case "church":
-
-//     break;
-
-//     // Word 7
-//     case :
-
-//     break;
-
-//     // Word 8
-//     case :
-
-//     break;
-
-//     // Word 9
-//     case :
-
-//     break;
-
-//     // Word 10
-//     case :
-
-//     break;
-
-//     // Word 11
-//     case :
-
-//     break;
-
-//     // Word 12
-//     case :
-
-//     break;
-
-//     // Word 13
-//     case :
-
-//     break;
-    
-
-//     // Word 14
-//     case :
-
-//     break;
-
-//     // Word 15
-//     case :
-
-//     break;
-
-
-//     // Word 16
-//     case :
-
-//     break;
-    
-
-//     // Word 17
-//     case :
-
-//     break;
-
-//     // Word 18
-//     case :
-
-//     break;
-
-//     // Word 19
-//     case :
-
-//     break;
-
-//     // Word 20
-//     case :
-
-//     break;
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-
-
-
-// }
