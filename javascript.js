@@ -500,7 +500,7 @@ wright
 writer
 yellow`;
 
-sixLetterWordArray = sixLetterWords.split("\n");
+let sixLetterWordArray = sixLetterWords.split("\n");
 
 // console.log(sixLetterWordArray);
 
@@ -704,7 +704,7 @@ WRINKLIES
 YID
 YIDS`;
 
-definitelyOffensiveWordsArray = definitelyOffensiveWords.split("\n");
+let definitelyOffensiveWordsArray = definitelyOffensiveWords.split("\n");
 
 
 var lowercaseDefinitelyOffensiveWordsArray = ["abo", "abos", "baldie", "baldies", "baldy", "baywop", "baywops", "bohunk", "bohunks", "buckra", "buckras", "bulldike", "bulldikes", "bulldyke", "bulldykes", "bumboy", "bumboys", "chola", "cholas", "cholo", "cholos", "coloreds", "comsymp", "comsymps", "crip", "crips", "cunt", "cunts", "dago", "dagoes", "dagos", "darkey", "darkeys", "darkie", "darkies", "darky ", "dikey", "dogan", "dogans", "dykey", "fag", "faggier", "faggiest", "faggot", "faggotries", "faggotry", "faggoty", "faggy", "fatso", "fatsoes", "fatsos", "feminazi", "feminazis", "ginzo", "ginzoes", "goolie", "goolies", "goy", "goyim", "goyish", "goyishe", "goys", "graybeard", "graybeards", "greybeard", "greybeards", "haole", "haoles", "hebe", "hebes", "ho", "honkey", "honkeys", "honkie", "honkies", "honky ", "hos", "hunkey", "hunkeys", "hunkie", "hunkies", "jew", "jewed", "jewing", "jews", "jigaboo", "jigaboos", "kike", "kikes", "les", "lesbo", "lesbos", "leses", "lez", "lezzes", "lezzie", "lezzies", "lezzy", "mick", "micks", "nigger", "niggers", "nitchie", "nitchies", "papism", "papisms", "papist", "papistic", "papistries", "papistry", "papists", "picaninnies", "picaninny", "pickaninnies", "pickaninny", "pickney", "pickneys", "polack", "polacks", "pommie", "pommies", "pommy", "poofier", "poofiest", "poofs", "pooftah", "pooftahs", "poofter", "poofters", "poofy", "poontang", "poontangs", "poove", "pooves", "poperies", "popery", "popish", "popishly", "raghead", "ragheads", "redneck", "redskin", "redskins", "schvartze", "schvartzes", "schwartze", "schwartzes", "sheeney", "sheeneys", "sheenie", "sheenies", "shegetz", "shemale", "shemales", "shicksa", "shicksas", "shiksa", "shiksas", "shikse", "shikseh", "shiksehs", "shikses", "shkotzim", "shkotzim", "shvartze", "shvartzes", "spic", "spick", "spicks", "spics", "spik", "spiks", "squaw", "squaws", "vendu", "vendus", "wetback", "wetbacks", "whities", "wog", "woggish", "wogs", "wop", "wops", "wrinklie", "wrinklies", "yid", "yids"];
@@ -745,17 +745,17 @@ randomWords(sixLetterWordArray);
 // fiftyRandomSixLetterWords = [1."formal", 2"spoken", 3"detect", 4"prison", 5"nobody", 6"church", 7"artist", 8"hardly", 9"moving", 10"wonder", 11"anyone", 12"mature", 13"button", 14"repeat", 15"phrase", 16"ending", 17"bright", 18"pretty", 19"struck", 20"sector", "silent", "legacy", "mainly", "happen", "defeat", "income", "afford", "berlin", "became", "solely", "agency", "rarely", "couple", "tennis", "direct", "thanks", "barely", "office", "circle", "relief", "moment", "manner", "domain", "across", "invest", "modest", "border", "twenty", "obtain", "modern"];
 
 // Word 1
-word1 = "formal";
-sixLetterWordsFromWord1 = 
+let word1 = "formal";
+let sixLetterWordsFromWord1 = 
 `formal`
 // 1
-fiveLetterWordsFromWord1 =
+let fiveLetterWordsFromWord1 =
 `flora
 foram
 molar
 moral`;
 // 
-fourLetterWordsFromWord1 = 
+let fourLetterWordsFromWord1 = 
 `farl
 farm
 faro
@@ -774,7 +774,7 @@ oral
 roam
 rolf`;
 //
-threeLetterWordsFromWord1 =
+let threeLetterWordsFromWord1 =
 `arf
 arm
 far
@@ -802,11 +802,11 @@ var threeLetterWordsFromWord1Array = threeLetterWordsFromWord1.split("\n");
 
     
 // Word 2
-word2 = "spoken";
-sixLetterWordsFromWord2 = 
+let word2 = "spoken";
+let sixLetterWordsFromWord2 = 
 `spoken`;
 // 1
-fiveLetterWordsFromWord2 =
+let fiveLetterWordsFromWord2 =
 `kenos
 knops
 knosp
@@ -816,7 +816,7 @@ pokes
 pones
 spoke`;
 // 
-fourLetterWordsFromWord2 = 
+let fourLetterWordsFromWord2 = 
 `eons
 epos
 keno
@@ -842,7 +842,7 @@ skep
 soke
 sone`;
 //
-threeLetterWordsFromWord2 =
+let threeLetterWordsFromWord2 =
 `ens
 eon
 ken
@@ -872,20 +872,20 @@ var fourLetterWordsFromWord2Array = fourLetterWordsFromWord2.split("\n");
 var threeLetterWordsFromWord2Array = threeLetterWordsFromWord2.split("\n");
   
 // Word 3
-word3 = "detect"
-sixLetterWordsFromWord3 = 
+let word3 = "detect"
+let sixLetterWordsFromWord3 = 
 `detect`
 // 
-fiveLetterWordsFromWord3 =
-// none!
+let fiveLetterWordsFromWord3 =
+``;
 // 
-fourLetterWordsFromWord3 = 
+let fourLetterWordsFromWord3 = 
 `cede
 cete
 deet
 teed`;
 //
-threeLetterWordsFromWord3 =
+let threeLetterWordsFromWord3 =
 `cee
 dee
 ted
@@ -902,14 +902,14 @@ var fourLetterWordsFromWord3Array = fourLetterWordsFromWord3.split("\n");
 var threeLetterWordsFromWord3Array = threeLetterWordsFromWord3.split("\n");
 
 // Word 4 
-word4 = `prison`
-sixLetterWordsFromWord4 = 
+let word4 = `prison`
+let sixLetterWordsFromWord4 = 
 `orpins
 prions
 prison
 spinor`;
 // 
-fiveLetterWordsFromWord4 =
+let fiveLetterWordsFromWord4 =
 `irons
 noirs
 noris
@@ -922,7 +922,7 @@ porns
 prion
 rosin`;
 // 
-fourLetterWordsFromWord4 = 
+let fourLetterWordsFromWord4 = 
 `inro
 ions
 iron
@@ -944,7 +944,7 @@ sori
 sorn
 spin`
 //
-threeLetterWordsFromWord4 =
+let threeLetterWordsFromWord4 =
 `ins
 ion
 nip
@@ -976,14 +976,14 @@ var fourLetterWordsFromWord4Array = fourLetterWordsFromWord4.split("\n");
 var threeLetterWordsFromWord4Array = threeLetterWordsFromWord4.split("\n");
 
 // Word 5
-word5 = `nobody`;
-sixLetterWordsFromWord5 = 
+let word5 = `nobody`;
+let sixLetterWordsFromWord5 = 
 `nobody`;
 // 
-fiveLetterWordsFromWord5 =
+let fiveLetterWordsFromWord5 =
 `boody`;
 // 
-fourLetterWordsFromWord5 = 
+let fourLetterWordsFromWord5 = 
 `body
 bond
 bony
@@ -992,7 +992,7 @@ boyo
 doby
 yond`;
 //
-threeLetterWordsFromWord5 =
+let threeLetterWordsFromWord5 =
 `bod
 boo
 boy
@@ -1015,17 +1015,17 @@ var threeLetterWordsFromWord5Array = threeLetterWordsFromWord5.split("\n");
 
 
 // Word 6 
-word6 = `church`;
-sixLetterWordsFromWord6 = 
+let word6 = `church`;
+let sixLetterWordsFromWord6 = 
 `church`;
 // 
-fiveLetterWordsFromWord6 =
+let fiveLetterWordsFromWord6 =
 `curch`;
 // 
-fourLetterWordsFromWord6 = 
-// None!
+let fourLetterWordsFromWord6 = 
+``;
 //
-threeLetterWordsFromWord6 =
+let threeLetterWordsFromWord6 =
 `cru
 cur
 huh`;
@@ -1040,14 +1040,14 @@ var threeLetterWordsFromWord6Array = threeLetterWordsFromWord6.split("\n");
 
 
 // Word 7
-word7 = `artist`;
-sixLetterWordsFromWord7 = 
+let word7 = `artist`;
+let sixLetterWordsFromWord7 = 
 `artist
 strait
 strati
 traits`;
 // 
-fiveLetterWordsFromWord7 =
+let fiveLetterWordsFromWord7 =
 `airts
 astir
 sitar
@@ -1058,7 +1058,7 @@ tarsi
 tarts
 trait`;
 // 
-fourLetterWordsFromWord7 = 
+let fourLetterWordsFromWord7 = 
 `airs
 airt
 aits
@@ -1077,7 +1077,7 @@ tats
 tits
 tsar`;
 //
-threeLetterWordsFromWord7 =
+let threeLetterWordsFromWord7 =
 `air
 ais
 ait
@@ -1110,17 +1110,17 @@ var threeLetterWordsFromWord7Array = threeLetterWordsFromWord7.split("\n");
 
 
 // Word 8
-word8 = `hardly`;
-sixLetterWordsFromWord8 = 
+let word8 = `hardly`;
+let sixLetterWordsFromWord8 = 
 `hardly`;
 // 
-fiveLetterWordsFromWord8 =
+let fiveLetterWordsFromWord8 =
 `hardy
 hydra
 lardy
 lyard`;
 // 
-fourLetterWordsFromWord8 = 
+let fourLetterWordsFromWord8 = 
 `aryl
 dahl
 dhal
@@ -1133,7 +1133,7 @@ lard
 yald
 yard`;
 //
-threeLetterWordsFromWord8 =
+let threeLetterWordsFromWord8 =
 `dah
 dal
 day
@@ -1160,17 +1160,18 @@ var threeLetterWordsFromWord8Array = threeLetterWordsFromWord8.split("\n");
 
 
 // Word 9
-word9 = `moving`;
-sixLetterWordsFromWord9 = 
+let word9 = `moving`;
+let sixLetterWordsFromWord9 = 
 `moving`;
 // 
-fiveLetterWordsFromWord9 =
+let fiveLetterWordsFromWord9 =
+``;
 // None!
 // 
-fourLetterWordsFromWord9 = 
+let fourLetterWordsFromWord9 = 
 `vino`;
 //
-threeLetterWordsFromWord9 =
+let threeLetterWordsFromWord9 =
 `gin
 ion
 mig
@@ -1191,12 +1192,12 @@ var fourLetterWordsFromWord9Array = fourLetterWordsFromWord9.split("\n");
 var threeLetterWordsFromWord9Array = threeLetterWordsFromWord9.split("\n");
 
 // Word 10
-word = `wonder`;
-sixLetterWordsFromWord10 = 
+let word = `wonder`;
+let sixLetterWordsFromWord10 = 
 `downer
 wonder`;
 // 
-fiveLetterWordsFromWord10 =
+let fiveLetterWordsFromWord10 =
 `dower
 drone
 drown
@@ -1208,7 +1209,7 @@ rewon
 rowed
 rowen`;
 // 
-fourLetterWordsFromWord10 = 
+let fourLetterWordsFromWord10 = 
 `doer
 done
 dore
@@ -1227,7 +1228,7 @@ wore
 worn
 wren`;
 //
-threeLetterWordsFromWord10 =
+let threeLetterWordsFromWord10 =
 `den
 dew
 doe
@@ -1265,15 +1266,15 @@ var threeLetterWordsFromWord10Array = threeLetterWordsFromWord10.split("\n");
 
 
 // Word 11
-word11 = `anyone`;
-sixLetterWordsFromWord11 = 
+let word11 = `anyone`;
+let sixLetterWordsFromWord11 = 
 `anyone`;
 // 
-fiveLetterWordsFromWord11 =
+let fiveLetterWordsFromWord11 =
 `annoy
 anyon`;
 // 
-fourLetterWordsFromWord11 = 
+let fourLetterWordsFromWord11 = 
 `aeon
 anon
 neon
@@ -1281,7 +1282,7 @@ nona
 none
 yean`;
 //
-threeLetterWordsFromWord11 =
+let threeLetterWordsFromWord11 =
 `ane
 any
 aye
@@ -1304,11 +1305,11 @@ var threeLetterWordsFromWord11Array = threeLetterWordsFromWord11.split("\n");
 
 
 // Word 12
-word12 = `mature`
-sixLetterWordsFromWord12 = 
+let word12 = `mature`
+let sixLetterWordsFromWord12 = 
 `mature`;
 // 
-fiveLetterWordsFromWord12 =
+let fiveLetterWordsFromWord12 =
 `armet
 mater
 muter
@@ -1316,7 +1317,7 @@ ramet
 tamer
 urate`;
 // 
-fourLetterWordsFromWord12 = 
+let fourLetterWordsFromWord12 = 
 `arum
 mare
 mart
@@ -1338,7 +1339,7 @@ tram
 true
 urea`;
 //
-threeLetterWordsFromWord12 =
+let threeLetterWordsFromWord12 =
 `amu
 are
 arm
@@ -1380,14 +1381,15 @@ var threeLetterWordsFromWord12Array = threeLetterWordsFromWord12.split("\n");
 
 
 // Word 13
-word13 = `button`;
-sixLetterWordsFromWord13 = 
+let word13 = `button`;
+let sixLetterWordsFromWord13 = 
 `button`;
 // 
-fiveLetterWordsFromWord13=
+let fiveLetterWordsFromWord13=
+``;
 // None!
 // 
-fourLetterWordsFromWord13 = 
+let fourLetterWordsFromWord13 = 
 `bott
 bout
 bunt
@@ -1395,7 +1397,7 @@ butt
 tout
 unto`;
 //
-threeLetterWordsFromWord13 =
+let threeLetterWordsFromWord13 =
 `bot
 bun
 but
@@ -1420,12 +1422,12 @@ var threeLetterWordsFromWord13Array = threeLetterWordsFromWord13.split("\n");
 
 
 // Word 14 
-word14 = `repeat`;
-sixLetterWordsFromWord14 = 
+let word14 = `repeat`;
+let sixLetterWordsFromWord14 = 
 `repeat
 retape`;
 // 
-fiveLetterWordsFromWord14 =
+let fiveLetterWordsFromWord14 =
 `apter
 arete
 eater
@@ -1437,7 +1439,7 @@ peter
 prate
 taper`;
 // 
-fourLetterWordsFromWord14 = 
+let fourLetterWordsFromWord14 = 
 `aper
 pare
 part
@@ -1462,7 +1464,7 @@ tepa
 trap
 tree`;
 //
-threeLetterWordsFromWord14 =
+let threeLetterWordsFromWord14 =
 `ape
 apt
 are
@@ -1499,15 +1501,15 @@ var fourLetterWordsFromWord14Array = fourLetterWordsFromWord14.split("\n");
 var threeLetterWordsFromWord14Array = threeLetterWordsFromWord14.split("\n");
 
 // Word 15
-word15 = `phrase`;
-sixLetterWordsFromWord15 = 
+let word15 = `phrase`;
+let sixLetterWordsFromWord15 = 
 `phrase
 raphes
 seraph
 shaper
 sherpa`;
 // 
-fiveLetterWordsFromWord15 =
+let fiveLetterWordsFromWord15 =
 `apers
 apres
 asper
@@ -1533,7 +1535,7 @@ shear
 spare
 spear`;
 // 
-fourLetterWordsFromWord15 = 
+let fourLetterWordsFromWord15 = 
 `aper
 apes
 apse
@@ -1572,7 +1574,7 @@ shea
 spae
 spar`;
 //
-threeLetterWordsFromWord15 =
+let threeLetterWordsFromWord15 =
 `ahs
 ape
 are
@@ -1618,17 +1620,17 @@ var threeLetterWordsFromWord15Array = threeLetterWordsFromWord15.split("\n");
 
 
 // Word 16
-word16 = `ending`;
-sixLetterWordsFromWord16 = 
+let word16 = `ending`;
+let sixLetterWordsFromWord16 = 
 `ending
 ginned`;
 // 
-fiveLetterWordsFromWord16 =
+let fiveLetterWordsFromWord16 =
 `deign
 dinge
 inned`;
 // 
-fourLetterWordsFromWord16 = 
+let fourLetterWordsFromWord16 = 
 `deni
 dine
 ding
@@ -1637,7 +1639,7 @@ gien
 nide
 nine`;
 //
-threeLetterWordsFromWord16 =
+let threeLetterWordsFromWord16 =
 `den
 die
 dig
@@ -1662,11 +1664,11 @@ var threeLetterWordsFromWord16Array = threeLetterWordsFromWord16.split("\n");
 
 
 // Word 17 
-word17 = `bright`;
-sixLetterWordsFromWord17 = 
+let word17 = `bright`;
+let sixLetterWordsFromWord17 = 
 `bright`;
 // 
-fiveLetterWordsFromWord17 =
+let fiveLetterWordsFromWord17 =
 `bight
 birth
 brith
@@ -1674,7 +1676,7 @@ girth
 grith
 right`;
 // 
-fourLetterWordsFromWord17= 
+let fourLetterWordsFromWord17= 
 `brig
 brit
 girt
@@ -1682,7 +1684,7 @@ grit
 thir
 trig`;
 //
-threeLetterWordsFromWord17 =
+let threeLetterWordsFromWord17 =
 `big
 bit
 ghi
@@ -1702,14 +1704,14 @@ var threeLetterWordsFromWord17Array = threeLetterWordsFromWord17.split("\n");
 
 
 // Word 18
-word18 = `pretty`;
-sixLetterWordsFromWord18 = 
+let word18 = `pretty`;
+let sixLetterWordsFromWord18 = 
 `pretty`;
 // 
-fiveLetterWordsFromWord18 =
+let fiveLetterWordsFromWord18 =
 `petty`;
 // 
-fourLetterWordsFromWord18 = 
+let fourLetterWordsFromWord18 = 
 `pert
 prey
 pyre
@@ -1720,7 +1722,7 @@ type
 tyre
 yett`;
 //
-threeLetterWordsFromWord18 =
+let threeLetterWordsFromWord18 =
 `per
 pet
 pry
@@ -1744,12 +1746,12 @@ var threeLetterWordsFromWord18Array = threeLetterWordsFromWord18.split("\n");
 
 
 // Word 19
-word19 = `struck`;
-sixLetterWordsFromWord19 = 
+let word19 = `struck`;
+let sixLetterWordsFromWord19 = 
 `struck
 trucks`;
 // 
-fiveLetterWordsFromWord19 =
+let fiveLetterWordsFromWord19 =
 `crust
 curst
 rucks
@@ -1757,7 +1759,7 @@ stuck
 truck
 tucks`;
 // 
-fourLetterWordsFromWord19 = 
+let fourLetterWordsFromWord19 = 
 `crus
 curs
 curt
@@ -1772,7 +1774,7 @@ suck
 tuck
 tusk`;
 //
-threeLetterWordsFromWord19 =
+let threeLetterWordsFromWord19 =
 `cru
 cur
 cut
@@ -1790,8 +1792,8 @@ var fourLetterWordsFromWord19Array = fourLetterWordsFromWord19.split("\n");
 var threeLetterWordsFromWord19Array = threeLetterWordsFromWord19.split("\n");
 
 // Word 20
-word20 = `sector`;
-sixLetterWordsFromWord20 = 
+let word20 = `sector`;
+let sixLetterWordsFromWord20 = 
 `corset
 coster
 escort
@@ -1799,7 +1801,7 @@ rectos
 scoter
 sector`;
 // 
-fiveLetterWordsFromWord20 =
+let fiveLetterWordsFromWord20 =
 `ceros
 cores
 corse
@@ -1816,7 +1818,7 @@ torcs
 tores
 torse`;
 // 
-fourLetterWordsFromWord20 = 
+let fourLetterWordsFromWord20 = 
 `cero
 core
 cors
@@ -1846,7 +1848,7 @@ tore
 tors
 tres`;
 //
-threeLetterWordsFromWord20 =
+let threeLetterWordsFromWord20 =
 `cor
 cos
 cot
@@ -1986,3 +1988,8 @@ var threeLetterWordsFromWord20Array = threeLetterWordsFromWord20.split("\n");
 
 console.log(threeLetterWordsFromWord20Array.length);
 
+document.getElementById("enterButton").onclick = function submitEntry() {
+
+}
+
+console.log(document.getElementById("wordInput"));
