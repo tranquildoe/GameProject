@@ -746,6 +746,9 @@ var fruits = ["banana", "orange", "apple"];
 
 // let twentyRandomSixLetterWordArray = ["formal", "spoken", "detect", "prison", "nobody", "church", "artist", "hardly", "moving", "wonder", "anyone", "mature", "button", "repeat", "phrase", "ending", "bright", "pretty", "struck", "sector"];
 
+
+
+
 // Word 1
 let word1 = "formal";
 let sixLetterWordsFromWord1 = 
@@ -802,7 +805,8 @@ var fourLetterWordsFromWord1Array = fourLetterWordsFromWord1.split("\n");
 
 var threeLetterWordsFromWord1Array = threeLetterWordsFromWord1.split("\n");
 
-    
+
+
 // Word 2
 let word2 = "spoken";
 let sixLetterWordsFromWord2 = 
@@ -872,7 +876,8 @@ var fiveLetterWordsFromWord2Array = fiveLetterWordsFromWord2.split("\n");
 var fourLetterWordsFromWord2Array = fourLetterWordsFromWord2.split("\n");
 
 var threeLetterWordsFromWord2Array = threeLetterWordsFromWord2.split("\n");
-  
+
+
 // Word 3
 let word3 = "detect"
 let sixLetterWordsFromWord3 = 
@@ -1882,6 +1887,225 @@ var fourLetterWordsFromWord20Array = fourLetterWordsFromWord20.split("\n");
 
 var threeLetterWordsFromWord20Array = threeLetterWordsFromWord20.split("\n");
 
+
+
+
+
+
+
+
+
+
+
+// DATA _____________________________________________________________________________________________________
+
+const gameWords = [
+    { 
+        number: 1,
+        startingWord: "formal",
+        sixLetterWordsFromWord1Array: ["formal"],
+        fiveLetterWordsFromWord1Array: ["flora", "foram", "molar", "moral"],
+        fourLetterWordsFromWord1Array: ["farl", "farm", "faro", "flam", "foal", "foam", "fora", "form", "from", "loaf", "loam", "marl", "mola", "mora", "oral", "roam", "rolf"],
+        threeLetterWordsFromWord1Array: ["arf", "arm", "far", "for", "fro", "lam", "lar", "mar", "moa", "mol", "mor", "oaf", "oar", "ora", "ram", "rom"],  
+    },
+       
+    
+    {
+        number: 2,
+        startingWord: "spoken",
+        sixLetterWordsFromWord2Array: ["spoken"],
+        fiveLetterWordsFromWord2Array: ["kenos", "knops", "knosp", "opens", "peons", "pokes", "pones", "spoke"],
+        fourLetterWordsFromWord2Array: ["eons", "epos", "keno", "kens", "keps", "knop", "kops", "noes", "nope", "nose", "okes", "ones", "open", "opes", "pens", "peon", "peso", "poke", "pone", "pons", "pose", "skep", "soke", "sone"],
+        threeLetterWordsFromWord2Array: ["ens", "eon", "ken", "kep", "kop", "kos", "nos", "oes", "oke", "one", "ons", "ope", "ops", "ose", "pen", "pes", "sen", "son", "sop"],
+    
+
+    },
+
+    {
+        number: 3,
+        startingWord: "detect",
+        sixLetterWordsFromWord3Array: ["detect"],
+        fiveLetterWordsFromWord3Array: [""],
+        fourLetterWordsFromWord3Array: ["cede", "cete", "deet", "teed"],
+        threeLetterWordsFromWord3Array: ["cee", "dee", "ted", "tee", "tet"]
+    },
+
+
+    {
+        number: 4,
+        startingWord: "prison",
+        sixLetterWordsFromWordArray: ["orpins", "prions", "prison", "spinor"],
+        fiveLetterWordsFromWordArray: ["irons", "noirs", "noris", "opsin", "ornis", "orpin", "pions", "pirns", "porns", "prion", "rosin"],
+        fourLetterWordsFromWordArray: ["inro", "ions", "iron", "nips", "noir", "nori", "pins", "pion", "pirn", "piso", "pois", "pons", "porn", "pros", "rins", "rips", "snip", "sori", "sorn", "spin"],
+        threeLetterWordsFromWordArray: ["ins", "ion", "nip", "nor", "nos", "ons", "ops", "ors", "pin", "pis", "poi", "pro", "psi", "rin", "rip", "sin", "sip", "sir", "son", "sop", "sri"]
+    },
+
+
+    {
+        number: 5,
+        startingWord: "nobody",
+        sixLetterWordsFromWordArray: ["nobody"],
+        fiveLetterWordsFromWordArray: ["boody"],
+        fourLetterWordsFromWordArray: ["body", "bond", "bony", "boon", "boyo", "doby", "yond"],
+        threeLetterWordsFromWordArray: ["bod", "boo", "boy", "don", "nob", "nod", "noo", "ono", "yob", "yod", "yon"]
+    },
+
+{
+        number: 6,
+        startingWord: "church",
+        sixLetterWordsFromWordArray: ["church"],
+        fiveLetterWordsFromWordArray: ["curch"],
+        fourLetterWordsFromWordArray: [""],
+        threeLetterWordsFromWordArray: ["cru", "cur", "huh"]
+    },
+
+
+{
+        number: 7,
+        startingWord: "artist",
+        sixLetterWordsFromWordArray: ["artist", "strait", "strati", "traits"],
+        fiveLetterWordsFromWordArray: ["airts", "astir", "sitar", "stair", "start", "stria", "tarsi", "tarts", "trait"],
+        fourLetterWordsFromWordArray: ["airs", "airt", "aits", "arts", "rais", "rats", "rias", "sari", "sati", "star", "stat", "stir", "tars", "tart", "tats", "tits", "tsar"],
+        threeLetterWordsFromWordArray: ["air", "ais", "ait", "ars", "art", "att", "its", "rai", "ras", "rat", "ria", "sat", "sir", "sit", "sri", "tar", "tas", "tat", "tis", "tit"]
+    },
+
+{
+        number: 8,
+        startingWord: "hardly",
+        sixLetterWordsFromWordArray: ["hardly"],
+        fiveLetterWordsFromWordArray: ["hardy", "hydra", "lardy", "lyard"],
+        fourLetterWordsFromWordArray: ["aryl", "dahl", "dhal", "dray", "hard", "harl", "hyla", "lady", "lard", "yald", "yard"],
+        threeLetterWordsFromWordArray: ["dah", "dal", "day", "dry", "had", "hay", "lad", "lar", "lay", "rad", "rah", "ray", "rya", "yah", "yar"]
+    },
+
+    
+{
+        number: 9,
+        startingWord: "moving",
+        sixLetterWordsFromWordArray: ["moving"],
+        fiveLetterWordsFromWordArray: [""],
+        fourLetterWordsFromWordArray: ["vino"],
+        threeLetterWordsFromWordArray: ["gin", "ion", "mig", "mog", "mon", "nim", "nog", "nom", "vig", "vim"]
+    },
+  
+
+{
+        number: 10,
+        startingWord: "wonder",
+        sixLetterWordsFromWordArray: ["downer", "wonder"],
+        fiveLetterWordsFromWordArray: ["dower", "drone", "drown", "endow", "owned", "owner", "redon", "rewon", "rowed", "rowen"],
+        fourLetterWordsFromWordArray: ["doer", "done", "dore", "down", "drew", "enow", "nerd", "node", "owed", "redo", "rend", "rode", "wend", "word", "wore", "worn", "wren"],
+        threeLetterWordsFromWordArray: ["den", "dew", "doe", "don", "dor", "dow", "end", "eon", "ern", "new", "nod", "nor", "now", "ode", "one", "ore", "owe", "own", "red", "rod", "roe", "row", "wed", "wen", "woe", "won"]
+    },
+
+    
+
+{
+        number: 11,
+        startingWord: "anyone",
+        sixLetterWordsFromWordArray: ["anyone"],
+        fiveLetterWordsFromWordArray: ["annoy", "anyon"],
+        fourLetterWordsFromWordArray: ["aeon", "anon", "neon", "nona", "none", "yean"],
+        threeLetterWordsFromWordArray: ["ane", "any", "aye", "eon", "nae", "nan", "nay", "one", "yea", "yen", "yon"]
+    },
+
+
+{
+        number: 12,
+        startingWord: "mature",
+        sixLetterWordsFromWordArray: ["mature"],
+        fiveLetterWordsFromWordArray: ["armet", "mater", "muter", "ramet", "tamer", "urate"],
+        fourLetterWordsFromWordArray: ["arum", "mare", "mart", "mate", "maut", "meat", "meta", "mura", "mure", "mute", "rate", "ream", "tame", "tare", "team", "tear", "term", "tram", "true", "urea"],
+        threeLetterWordsFromWordArray: ["amu", "are", "arm", "art", "ate", "ear", "eat", "eau", "emu", "era", "eta", "mae", "mar", "mat", "met", "mut", "ram", "rat", "rem", "ret", "rue", "rum", "rut", "tae", "tam", "tar", "tau", "tea", "uta", "ute"]
+    },
+
+
+{
+        number: 13,
+        startingWord: "button",
+        sixLetterWordsFromWordArray: ["button"],
+        fiveLetterWordsFromWordArray: [""],
+        fourLetterWordsFromWordArray: ["bott", "bout", "bunt", "butt", "tout", "unto"],
+        threeLetterWordsFromWordArray: ["bot", "bun", "but", "nob", "not", "nub", "nut", "out", "ton", "tot", "tub", "tun", "tut"]
+    },
+   
+
+{
+        number: 14,
+        startingWord: "repeat",
+        sixLetterWordsFromWordArray: ["repeat", "retape"],
+        fiveLetterWordsFromWordArray: ["apter", "arete", "eater", "etape", "pater", "peart", "perea", "peter", "prate", "taper"],
+        fourLetterWordsFromWordArray: ["aper", "pare", "part", "pate", "pear", "peat", "peer", "pere", "pert", "prat", "pree", "rape", "rapt", "rate", "reap", "rete", "tape", "tare", "tarp", "tear", "tepa", "trap", "tree"],
+        threeLetterWordsFromWordArray: ["ape", "apt", "are", "art", "ate", "ear", "eat", "era", "ere", "eta", "par", "pat", "pea", "pee", "per", "pet", "rap", "rat", "ree", "rep", "ret", "tae", "tap", "tar", "tea", "tee"]
+    },
+    
+
+{
+        number: 15,
+        startingWord: "phrase",
+        sixLetterWordsFromWordArray:  ["phrase", "raphes", "seraph", "shaper", "sherpa"],
+        fiveLetterWordsFromWordArray: ["apers", "apres", "asper", "ephas", "hares", "harps", "heaps", "hears", "pares", "parse", "pears", "phase", "prase", "presa", "rapes", "raphe", "reaps", "rheas", "shape", "share", "sharp", "shear", "spare", "spear"],
+        fourLetterWordsFromWordArray:  ["aper", "apes", "apse", "ares", "arse", "ears", "epha", "eras", "haes", "haps", "hare", "harp", "hasp", "heap", "hear", "hers", "pare", "pars", "pase", "pash", "pear", "peas", "pehs", "rape", "raps", "rase", "rash", "rasp", "reap", "reps", "resh", "rhea", "sear", "sera", "shea", "spae", "spar"],
+        threeLetterWordsFromWordArray: ["ahs", "ape", "are", "ars", "ash", "asp", "ear", "era", "ers", "hae", "hap", "has", "hep", "her", "hes", "pah", "par", "pas", "pea", "peh", "per", "pes", "rah", "rap", "ras", "rep", "res", "sae", "sap", "sea", "ser", "sha", "she", "spa"]
+    },
+ 
+
+{
+        number: 16,
+        startingWord: "ending",
+        sixLetterWordsFromWordArray: ["ending", "ginned"],
+        fiveLetterWordsFromWordArray: ["deign", "dinge", "inned"],
+        fourLetterWordsFromWordArray: ["deni", "dine", "ding", "gied", "gien", "nide", "nine"],
+        threeLetterWordsFromWordArray: ["den", "die", "dig", "din", "end", "eng", "ged", "gen", "gid", "gie", "gin", "inn", "neg"]
+    },
+    
+
+{
+        number: 17,
+        startingWord: "bright",
+        sixLetterWordsFromWordArray: ["bright"],
+        fiveLetterWordsFromWordArray: ["bight", "birth", "brith", "girth", "grith", "right"],
+        fourLetterWordsFromWordArray: ["brig", "brit", "girt", "grit", "thir", "trig"],
+        threeLetterWordsFromWordArray: ["big", "bit", "ghi", "gib", "git", "hit", "rib", "rig"]
+    },
+  
+
+{
+        number: 18,
+        startingWord: "pretty",
+        sixLetterWordsFromWordArray: ["pretty"],
+        fiveLetterWordsFromWordArray: ["petty"],
+        fourLetterWordsFromWordArray: ["pert", "prey", "pyre", "tret", "trey", "tyer", "type", "tyre", "yett"],
+        threeLetterWordsFromWordArray: ["per", "pet", "pry", "pye", "rep", "ret", "rye", "tet", "try", "tye", "yep", "yet"]
+    },
+    
+
+{
+        number: 19,
+        startingWord: "struck",
+        sixLetterWordsFromWordArray: ["struck", "trucks"],
+        fiveLetterWordsFromWordArray: ["crust", "curst", "rucks", "stuck", "truck", "tucks"],
+        fourLetterWordsFromWordArray: ["crus", "curs", "curt", "cusk", "cuts", "ruck", "rusk", "rust", "ruts", "scut", "suck", "tuck", "tusk"],
+        threeLetterWordsFromWordArray: ["cru", "cur", "cut", "rut", "suk", "tsk", "uts"]
+    },
+
+
+{
+        number: 20,
+        startingWord: "sector",
+        sixLetterWordsFromWordArray: ["corset", "coster", "escort", "rectos", "scoter", "sector"],
+        fiveLetterWordsFromWordArray: ["ceros", "cores", "corse", "coset", "cotes", "crest", "escot", "recto", "roset", "rotes", "score", "store", "torcs", "tores", "torse"],
+        fourLetterWordsFromWordArray: ["cero", "core", "cors", "cost", "cote", "cots", "eros", "erst", "orcs", "ores", "orts", "recs", "rest", "rets", "rocs", "roes", "rose", "rote", "rots", "scot", "sect", "sore", "sort", "toes", "torc", "tore", "tors", "tres"],
+        threeLetterWordsFromWordArray: ["cor", "cos", "cot", "ers", "oes", "orc", "ore", "ors", "ort", "ose", "rec", "res", "ret", "roc", "roe", "rot", "sec", "ser", "set", "sot", "toe", "tor"]
+    },
+    
+]
+    // console.log(threeLetterWordsFromWord20Array);
+    
+    console.log(gameWords);
+
+
+
 // // Word 
 // word =
 // sixLetterWordsFromWord = 
@@ -2043,7 +2267,7 @@ document.getElementById("showLettersToWorkWith").textContent = scrambledWordToDi
 
 
 
-console.log(document.getElementById("showLettersToWorkWith").textContent);
+
 
 console.log(document.getElementById("showLettersToWorkWith").textContent);
 
@@ -2052,6 +2276,7 @@ console.log(document.getElementById("showLettersToWorkWith").textContent);
 var input = document.getElementById("wordInput").textContent;
 
 document.getElementById("enterButton").onclick = function submitEntry(input) {
+    console.log("clicked");
 }
 // var input = document.getElementById("wordInput").textContent;
 //     switch (input) {
@@ -2075,3 +2300,123 @@ document.getElementById("enterButton").onclick = function submitEntry(input) {
 
 // console.log(document.getElementById("wordInput").textContent);
 
+
+
+const expr = randomSixLetterWordHere;
+// switch (expr) {
+//     // Word1
+//     case "formal":
+
+//     break;
+
+//     // Word2
+//     case "spoken":
+
+//     break;
+
+//     // Word3
+//     case "detect":
+
+//     break;
+
+//     // Word 4
+//     case "prison":
+
+//     break;
+
+//      // Word 5
+//      case "nobody":
+
+//     break;
+
+//     // Word 6
+//     case "church":
+
+//     break;
+
+//     // Word 7
+//     case :
+
+//     break;
+
+//     // Word 8
+//     case :
+
+//     break;
+
+//     // Word 9
+//     case :
+
+//     break;
+
+//     // Word 10
+//     case :
+
+//     break;
+
+//     // Word 11
+//     case :
+
+//     break;
+
+//     // Word 12
+//     case :
+
+//     break;
+
+//     // Word 13
+//     case :
+
+//     break;
+    
+
+//     // Word 14
+//     case :
+
+//     break;
+
+//     // Word 15
+//     case :
+
+//     break;
+
+
+//     // Word 16
+//     case :
+
+//     break;
+    
+
+//     // Word 17
+//     case :
+
+//     break;
+
+//     // Word 18
+//     case :
+
+//     break;
+
+//     // Word 19
+//     case :
+
+//     break;
+
+//     // Word 20
+//     case :
+
+//     break;
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+
+
+// }
