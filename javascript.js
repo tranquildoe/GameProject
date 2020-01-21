@@ -731,18 +731,20 @@ var fruits = ["banana", "orange", "apple"];
 // checkIfOffensiveWord(fourLetterWordsFromWord1Array);
 
 
-let array = [];
-function randomWords(sixLetterWordArray) {
-for (let i=0; i<50; i++) {
-    let randomIndex = Math.floor(Math.random() * sixLetterWordArray.length)
-    array.push(sixLetterWordArray[randomIndex]);
-}
-// console.log(array);
-}
+// let array = [];
+// function randomWords(sixLetterWordArray) {
+// for (let i=0; i<50; i++) {
+//     let randomIndex = Math.floor(Math.random() * sixLetterWordArray.length)
+//     array.push(sixLetterWordArray[randomIndex]);
+// }
+// // console.log(array);
+// }
 
-randomWords(sixLetterWordArray);
+// randomWords(sixLetterWordArray);
 
 // fiftyRandomSixLetterWords = [1."formal", 2"spoken", 3"detect", 4"prison", 5"nobody", 6"church", 7"artist", 8"hardly", 9"moving", 10"wonder", 11"anyone", 12"mature", 13"button", 14"repeat", 15"phrase", 16"ending", 17"bright", 18"pretty", 19"struck", 20"sector", "silent", "legacy", "mainly", "happen", "defeat", "income", "afford", "berlin", "became", "solely", "agency", "rarely", "couple", "tennis", "direct", "thanks", "barely", "office", "circle", "relief", "moment", "manner", "domain", "across", "invest", "modest", "border", "twenty", "obtain", "modern"];
+
+// let twentyRandomSixLetterWordArray = ["formal", "spoken", "detect", "prison", "nobody", "church", "artist", "hardly", "moving", "wonder", "anyone", "mature", "button", "repeat", "phrase", "ending", "bright", "pretty", "struck", "sector"];
 
 // Word 1
 let word1 = "formal";
@@ -1988,8 +1990,88 @@ var threeLetterWordsFromWord20Array = threeLetterWordsFromWord20.split("\n");
 
 console.log(threeLetterWordsFromWord20Array.length);
 
-document.getElementById("enterButton").onclick = function submitEntry() {
+
+
+let twentyRandomSixLetterWordArray = ["spoken", "formal", "detect", "prison", "nobody", "church", "artist", "hardly", "moving", "wonder", "anyone", "mature", "button", "repeat", "phrase", "ending", "bright", "pretty", "struck", "sector"];
+
+// let array1 = [];
+// function randomWords(arrayInsert) {
+// for (let i=0; i<2; i++) {
+//     let randomIndex = Math.floor(Math.random() * arrayInsert.length)
+//     array1.push(arrayInsert[randomIndex]);
+// }
+// // console.log(arrayInsert);
+// }
+
+// console.log(randomWords(twentyRandomSixLetterWordArray));
+
+
+
+// Word from which will display Letters to Work With
+let randomSixLetterWordHere = twentyRandomSixLetterWordArray[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
+// console.log(randomSixLetterWordHere);
+
+
+
+
+function scrambleWord (string) {
+
+    const scrambledString = [];
+
+    const stringArr = string.split (''); 
+
+    while (stringArr.length) {
+        scrambledString.push(stringArr.splice(Math.floor (Math.random () * (stringArr.length - 1)) , 1)[0]);
+    }
+
+    return scrambledString.join ('');
 
 }
 
-console.log(document.getElementById("wordInput"));
+var scrambledWordToDisplay = scrambleWord(randomSixLetterWordHere);
+
+console.log(randomSixLetterWordHere);
+
+document.getElementById("showLettersToWorkWith").textContent = scrambledWordToDisplay;
+
+
+
+// var scrambledWordToDisplay = document.getElementById("showLettersToWorkWith").textContent;
+
+
+
+
+
+
+console.log(document.getElementById("showLettersToWorkWith").textContent);
+
+console.log(document.getElementById("showLettersToWorkWith").textContent);
+
+// console.log(wordToDisplay);
+
+var input = document.getElementById("wordInput").textContent;
+
+document.getElementById("enterButton").onclick = function submitEntry(input) {
+}
+// var input = document.getElementById("wordInput").textContent;
+//     switch (input) {
+//         case input.length === 6:
+//             .includes
+//             break;
+//         case input.length === 5:
+//             .includes
+//             break;
+//         case input.length === 4:
+//             .includes
+//             break;
+//         case input.length === 3:
+//             .includes
+//             break
+//         default:
+//             console.log("You need to enter a 3 to 6 letter word.");
+
+//     }
+// }
+
+// console.log(document.getElementById("wordInput").textContent);
+
