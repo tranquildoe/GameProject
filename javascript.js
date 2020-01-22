@@ -2991,7 +2991,34 @@ document.getElementById(
 
 console.log(document.getElementById("showLettersToWorkWith").innerHTML);
 
-function clearTable(){}
+
+let table3 = document.getElementById("threeLetterWordHolder");
+let table4 = document.getElementById("fourLetterWordHolder");
+let table5 = document.getElementById("fiveLetterWordHolder");
+let table6 = document.getElementById("sixLetterWordHolder");
+
+
+function clearTable(){
+  while (table3.firstChild) {
+    table3.removeChild(table3.firstChild);
+  } 
+  while (table4.firstChild) {
+    table4.removeChild(table4.firstChild);
+  } 
+  while (table5.firstChild) {
+    table5.removeChild(table5.firstChild);
+  } 
+  while (table6.firstChild) {
+    table6.removeChild(table6.firstChild);
+  } 
+  
+}
+
+
+
+
+
+
 
 
 
@@ -3002,6 +3029,7 @@ beginGameButton.onclick = function beginGame() {
 
 beginGameButton.style.display = "none";
 letters.style.display="flex";
+
 
 }
 
@@ -3015,6 +3043,7 @@ nextBtn.onclick = function nextRound() {
 // let randomSixLetterWordHere = randomLevel.startingWord;
   console.log(randomLevel.startingWord);
 
+  clearTable();
 
 
 
