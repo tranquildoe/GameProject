@@ -3051,7 +3051,10 @@ nextBtn.onclick = function nextRound() {
   // gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
  
 // let randomSixLetterWordHere = randomLevel.startingWord;
+
+  document.getElementById("wordInput").value = '';
   
+
 
   clearTable();
 
@@ -3089,6 +3092,8 @@ let wordDiv = document.createElement("div");
 
 
 document.getElementById("enterButton").onclick = function submitEntry(e) {
+
+
     var userInput = document.getElementById("wordInput").value;
     var success6 = "You found the longest word/s!";
     var success5 = "Five letter word found";

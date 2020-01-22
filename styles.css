@@ -125,7 +125,7 @@
 }
 
 #nextRoundButton {
-    display: flex;
+    display: none;
     padding: 0 7px 2px;
     margin: 9.5px;
 }
