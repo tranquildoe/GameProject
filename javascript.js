@@ -2987,30 +2987,40 @@ var scrambledWordToDisplay = scrambleWord(randomLevel.startingWord);
 
 document.getElementById(
   "showLettersToWorkWith"
-).textContent = scrambledWordToDisplay;
+).innerHTML = scrambledWordToDisplay;
 
-console.log(document.getElementById("showLettersToWorkWith").textContent);
+console.log(document.getElementById("showLettersToWorkWith").innerHTML);
 
 function clearTable(){}
 
-function startGame(){}
+const beginGameButton = document.getElementById("beginGameButton");
+beginGameButton.onclick = function beginGame() {
+
+beginGameButton.style.display = "none";
 
 
-const nextBtn = document.getElementById("nextRoundButton");
-
-nextBtn.onclick = () => {
-    
 }
 
+const nextBtn= document.getElementById("nextRoundButton");
+
+nextBtn.onclick = function nextRound() {
+    // Select random level
+  let randomLevel =
+  gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
+ 
+// let randomSixLetterWordHere = randomLevel.startingWord;
+  console.log(randomLevel.startingWord);
 
 
 
 
 
+
+}
 
 let wordDiv = document.createElement("div");
                 wordDiv.className = "word";
-                console.log(document.getElementById("sixLetterWordHolder").appendChild(wordDiv));
+                // console.log(document.getElementById("sixLetterWordHolder").appendChild(wordDiv));
 
 
 document.getElementById("enterButton").onclick = function submitEntry(e) {
@@ -3019,7 +3029,7 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
     var success5 = "Five letter word found";
     var success4 = "Four letter word found";
     var success3 = "Three letter word found";
-    var defaultLog = "Please enter a word with 3 to 6 letters. Slurs and derogatory words are excluded.";
+    var defaultLog = "Please enter a word with 3 to 6 of the above letters. Slurs and derogatory words are excluded.";
 //   console.log(userInput)
     const expr = userInput.length;
     const lcUserInput = userInput.toLowerCase();
