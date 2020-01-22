@@ -3008,7 +3008,9 @@ nextBtn.onclick = () => {
 
 
 
-
+let wordDiv = document.createElement("div");
+                wordDiv.className = "word";
+                console.log(document.getElementById("sixLetterWordHolder").appendChild(wordDiv));
 
 
 document.getElementById("enterButton").onclick = function submitEntry(e) {
@@ -3030,6 +3032,12 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
                 console.log(document.getElementById("messageToUser").innerHTML);
                 
                 console.log(document.getElementById("nextRoundButton").innerHTML);
+
+                let wordDiv = document.createElement("div");
+                wordDiv.className = "word";
+                wordDiv.innerHTML = userInput;
+
+                document.getElementById("sixLetterWordHolder").appendChild(wordDiv);
 
                 // let nextRoundButton = document.getElementById("nextRoundButton").innerHTML;
                 // let classes = nextRoundButton.classList;
