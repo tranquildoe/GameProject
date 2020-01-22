@@ -3044,7 +3044,7 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
 
              
                     // console.log(successTarget)
-                    nextBtn.style.display = "block";
+                nextBtn.style.display = "block";
 
                 // successTarget.addEventListener(successTarget, changeVisibilityNextRoundButton)
                 // function changeVisibilityNextRoundButton(e) {
@@ -3070,6 +3070,12 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
                 console.log(success5);
                 document.getElementById("messageToUser").innerHTML = success5;
                 console.log(document.getElementById("messageToUser").innerHTML);
+
+                let wordDiv = document.createElement("div");
+                wordDiv.className = "word";
+                wordDiv.innerHTML = userInput;
+
+                document.getElementById("fiveLetterWordHolder").appendChild(wordDiv);
             }
             else {
                 console.log("Try again.");
@@ -3081,6 +3087,12 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
                 console.log(success4);
                 document.getElementById("messageToUser").innerHTML = success4;
                 console.log(document.getElementById("messageToUser").innerHTML);
+
+                let wordDiv = document.createElement("div");
+                wordDiv.className = "word";
+                wordDiv.innerHTML = userInput;
+
+                document.getElementById("fourLetterWordHolder").appendChild(wordDiv);
             } 
             else {
                 console.log("Try again.");
@@ -3092,6 +3104,12 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
                 console.log(success3);
                 document.getElementById("messageToUser").innerHTML = success3;
                 console.log(document.getElementById("messageToUser").innerHTML);
+
+                let wordDiv = document.createElement("div");
+                wordDiv.className = "word";
+                wordDiv.innerHTML = userInput;
+
+                document.getElementById("threeLetterWordHolder").appendChild(wordDiv);
             } 
             else {
                 console.log("Try again.");
