@@ -2961,13 +2961,21 @@ let twentyRandomSixLetterWordArray = [
 
 
 
-
+// Function to Get Random Level _________________
 
 let randomLevel =
   gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
 
-let randomSixLetterWordHere = randomLevel.startingWord;
-console.log(randomLevel.startingWord);
+function getRandomLevel() {
+let randomLevel2 =gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
+let randomLevelStartWord = randomLevel2.startingWord;
+console.log(randomLevelStartWord);
+};
+
+// getRandomLevel();
+
+
+// Function to Scramble Word ________________________
 
 function scrambleWord(string) {
   const scrambledString = [];
@@ -2991,6 +2999,7 @@ document.getElementById(
 
 console.log(document.getElementById("showLettersToWorkWith").innerHTML);
 
+console.log(randomLevel.startingWord);
 
 let table3 = document.getElementById("threeLetterWordHolder");
 let table4 = document.getElementById("fourLetterWordHolder");
@@ -3036,18 +3045,41 @@ letters.style.display="flex";
 const nextBtn= document.getElementById("nextRoundButton");
 
 nextBtn.onclick = function nextRound() {
+
     // Select random level
-  let randomLevel =
-  gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
+  // let randomLevel =
+  // gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
  
 // let randomSixLetterWordHere = randomLevel.startingWord;
-  console.log(randomLevel.startingWord);
+  
 
   clearTable();
 
+  nextBtn.style.display = "none";
+  
+  // getRandomLevel();
 
+  let randomLevel =
+  gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
 
+  function getRandomLevel() {
+  let randomLevel2 =gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
+  let randomLevelStartWord = randomLevel2.startingWord;
+  console.log(randomLevelStartWord);
+  };
 
+  var scrambledWordToDisplay = scrambleWord(randomLevel.startingWord);
+
+  document.getElementById(
+    "showLettersToWorkWith"
+  ).innerHTML = scrambleWord(randomLevel.startingWord);
+
+// document.getElementById(
+//   "showLettersToWorkWith"
+// ).innerHTML = scrambledWordToDisplay;
+  console.log(document.getElementById("showLettersToWorkWith").innerHTML);
+
+  console.log(randomLevel.startingWord);
 
 }
 
