@@ -123,3 +123,13 @@
     margin: 5px;
     box-sizing: border-box;
 }
+
+#nextRoundButton {
+    display: none;
+    padding: 0 7px 2px;
+    margin: 9.5px;
+}
+
+#buttonHolder {
+    display: flex;
+}

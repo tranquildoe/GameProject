@@ -2958,6 +2958,11 @@ let twentyRandomSixLetterWordArray = [
 // console.log(randomWords(twentyRandomSixLetterWordArray));
 
 // Word from which will display Letters to Work With
+
+
+
+
+
 let randomLevel =
   gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
 
@@ -2986,6 +2991,25 @@ document.getElementById(
 
 console.log(document.getElementById("showLettersToWorkWith").textContent);
 
+function clearTable(){}
+
+function startGame(){}
+
+
+const nextBtn = document.getElementById("nextRoundButton");
+
+nextBtn.onclick = () => {
+    
+}
+
+
+
+
+
+
+
+
+
 
 document.getElementById("enterButton").onclick = function submitEntry(e) {
     var userInput = document.getElementById("wordInput").value;
@@ -3000,9 +3024,33 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
     switch (expr) {
         case 6:
             if(randomLevel.sixLetterWordsFromWordArray.includes(lcUserInput)) {
+                let successTarget = randomLevel.sixLetterWordsFromWordArray.includes(lcUserInput);
                 console.log(success6);
                 document.getElementById("messageToUser").innerHTML = success6;
                 console.log(document.getElementById("messageToUser").innerHTML);
+                
+                console.log(document.getElementById("nextRoundButton").innerHTML);
+
+                // let nextRoundButton = document.getElementById("nextRoundButton").innerHTML;
+                // let classes = nextRoundButton.classList;
+
+             
+                    // console.log(successTarget)
+                    nextBtn.style.display = "block";
+
+                // successTarget.addEventListener(successTarget, changeVisibilityNextRoundButton)
+                // function changeVisibilityNextRoundButton(e) {
+                //     let nextRoundButton = document.getElementById("nextRoundButton");
+                //     // need "(id)" at end of prev line?
+                    
+                //     if (nextRoundButton.style.display == 'block') {
+                //         nextRoundButton.style.display = 'none';
+                //     }
+                //     else {nextRoundButton.style.display = 'block';
+
+                //     }
+                // }
+
             } 
             else {
                 console.log("Try again.");
