@@ -2993,11 +2993,15 @@ console.log(document.getElementById("showLettersToWorkWith").innerHTML);
 
 function clearTable(){}
 
+
+
 const beginGameButton = document.getElementById("beginGameButton");
+const letters = document.getElementById("showLettersToWorkWith");
+
 beginGameButton.onclick = function beginGame() {
 
 beginGameButton.style.display = "none";
-
+letters.style.display="flex";
 
 }
 
