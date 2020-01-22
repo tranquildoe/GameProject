@@ -2989,13 +2989,20 @@ console.log(document.getElementById("showLettersToWorkWith").textContent);
 
 document.getElementById("enterButton").onclick = function submitEntry(e) {
     var userInput = document.getElementById("wordInput").value;
+    var success6 = "You found the longest word/s!";
+    var success5 = "Five letter word found";
+    var success4 = "Four letter word found";
+    var success3 = "Three letter word found";
+    var defaultLog = "Please enter a word with 3 to 6 letters. Slurs and derogatory words are excluded.";
 //   console.log(userInput)
     const expr = userInput.length;
     const lcUserInput = userInput.toLowerCase();
     switch (expr) {
         case 6:
             if(randomLevel.sixLetterWordsFromWordArray.includes(lcUserInput)) {
-                console.log("You found the longest word!");
+                console.log(success6);
+                document.getElementById("messageToUser").innerHTML = success6;
+                console.log(document.getElementById("messageToUser").innerHTML);
             } 
             else {
                 console.log("Try again.");
@@ -3004,7 +3011,9 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
     
         case 5:
             if(randomLevel.fiveLetterWordsFromWordArray.includes(lcUserInput)) {
-                console.log("Five letter word found");
+                console.log(success5);
+                document.getElementById("messageToUser").innerHTML = success5;
+                console.log(document.getElementById("messageToUser").innerHTML);
             }
             else {
                 console.log("Try again.");
@@ -3013,7 +3022,9 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
 
         case 4:
             if(randomLevel.fourLetterWordsFromWordArray.includes(lcUserInput)) {
-                console.log("Four letter word found");
+                console.log(success4);
+                document.getElementById("messageToUser").innerHTML = success4;
+                console.log(document.getElementById("messageToUser").innerHTML);
             } 
             else {
                 console.log("Try again.");
@@ -3022,7 +3033,9 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
 
         case 3:
             if(randomLevel.threeLetterWordsFromWordArray.includes(lcUserInput)) {
-                console.log("Three letter word found");
+                console.log(success3);
+                document.getElementById("messageToUser").innerHTML = success3;
+                console.log(document.getElementById("messageToUser").innerHTML);
             } 
             else {
                 console.log("Try again.");
@@ -3030,6 +3043,8 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
             break;
         
         default:
-            console.log("Please enter a word with 3 to 6 letters. Slurs and derogatory words are excluded.");
+            console.log(defaultLog);
+            document.getElementById("messageToUser").innerHTML = defaultLog;
+                console.log(document.getElementById("messageToUser").innerHTML);
     }
 }

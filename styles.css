@@ -115,3 +115,11 @@
         margin: 10px;
     
 }
+
+#messageToUser {
+    height: 40px;
+    width: 40%;
+    border: 1px solid black;
+    margin: 5px;
+    box-sizing: border-box;
+}
