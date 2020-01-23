@@ -3008,18 +3008,22 @@ let table6 = document.getElementById("sixLetterWordHolder");
 
 
 function clearTable(){
-  while (table3.firstChild) {
-    table3.removeChild(table3.firstChild);
-  } 
-  while (table4.firstChild) {
-    table4.removeChild(table4.firstChild);
-  } 
-  while (table5.firstChild) {
-    table5.removeChild(table5.firstChild);
-  } 
-  while (table6.firstChild) {
-    table6.removeChild(table6.firstChild);
-  } 
+  table3.innerHTML = "";
+  table4.innerHTML = "";
+  table5.innerHTML = "";
+  table6.innerHTML = "";
+  // while (table3.firstChild) {
+  //   table3.removeChild(table3.firstChild);
+  // } 
+  // while (table4.firstChild) {
+  //   table4.removeChild(table4.firstChild);
+  // } 
+  // while (table5.firstChild) {
+  //   table5.removeChild(table5.firstChild);
+  // } 
+  // while (table6.firstChild) {
+  //   table6.removeChild(table6.firstChild);
+  // } 
   
 }
 
@@ -3124,7 +3128,7 @@ function submitEntry(e){
 
       
                   // console.log(successTarget)
-              nextBtn.style.display = "block";
+              nextBtn.style.display = "flex";
               
               // successTarget.addEventListener(successTarget, changeVisibilityNextRoundButton)
               // function changeVisibilityNextRoundButton(e) {

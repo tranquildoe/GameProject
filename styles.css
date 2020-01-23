@@ -10,6 +10,8 @@
 .wordHolder{
     display: flex;
     box-sizing: border-box;
+    flex-wrap: wrap;
+    min-height: 80vh;
     /* flex-direction: row; */
     /* height: 100%; */
 }
@@ -19,7 +21,7 @@
     width: 25%;
     flex-direction: column;
     box-sizing: border-box;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
 }
 
@@ -28,7 +30,7 @@
     width: 25%;
     flex-direction: column;
     box-sizing: border-box;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
 
 }
@@ -38,7 +40,7 @@
     width: 25%;
     flex-direction: column;
     box-sizing: border-box;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
 
 }
@@ -48,7 +50,7 @@
     width: 25%;
     flex-direction: column;
     box-sizing: border-box;
-    display: flex;
+    /* display: flex; */
 }
 
 
