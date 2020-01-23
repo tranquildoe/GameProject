@@ -3077,7 +3077,7 @@ let wordDiv = document.createElement("div");
 
 document.getElementById("enterButton").onclick = function submitEntry(e) {
 
-
+    const input = document.getElementById("wordInput");
     var userInput = document.getElementById("wordInput").value;
     var success6 = "You found the longest word/s!";
     var success5 = "Five letter word found";
@@ -3106,7 +3106,7 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
         
                     // console.log(successTarget)
                 nextBtn.style.display = "block";
-
+                
                 // successTarget.addEventListener(successTarget, changeVisibilityNextRoundButton)
                 // function changeVisibilityNextRoundButton(e) {
                 //     let nextRoundButton = document.getElementById("nextRoundButton");
@@ -3119,13 +3119,14 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
 
                 //     }
                 // }
-
+              
             } 
             else {
-                console.log("Try again.");
-                console.log("user input", userInput);
-                console.log("random", randomLevel.startingWord)
-
+                // console.log("Try again.");
+                // console.log("user input", userInput);
+                // console.log("random", randomLevel.startingWord)
+                document.getElementById("messageToUser").innerHTML = "Try again.";
+                console.log(document.getElementById("messageToUser").innerHTML);
             }
             break;
     
@@ -3142,12 +3143,14 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
                 document.getElementById("fiveLetterWordHolder").appendChild(wordDiv);
             }
             else {
-                console.log("Try again.");
+                // console.log("Try again.");
+                document.getElementById("messageToUser").innerHTML = "Try again.";
+                console.log(document.getElementById("messageToUser").innerHTML);
             }
             break;
 
         case 4:
-            if((randomLevel.startingWord).fourLetterWordsFromWordArray.includes(lcUserInput)) {
+            if(randomLevel.fourLetterWordsFromWordArray.includes(lcUserInput)) {
                 console.log(success4);
                 document.getElementById("messageToUser").innerHTML = success4;
                 console.log(document.getElementById("messageToUser").innerHTML);
@@ -3159,7 +3162,9 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
                 document.getElementById("fourLetterWordHolder").appendChild(wordDiv);
             } 
             else {
-                console.log("Try again.");
+                // console.log("Try again.");
+                document.getElementById("messageToUser").innerHTML = "Try again.";
+                console.log(document.getElementById("messageToUser").innerHTML);
             }
             break;
 
@@ -3176,7 +3181,9 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
                 document.getElementById("threeLetterWordHolder").appendChild(wordDiv);
             } 
             else {
-                console.log("Try again.");
+                // console.log("Try again.");
+                document.getElementById("messageToUser").innerHTML = "Try again.";
+                console.log(document.getElementById("messageToUser").innerHTML);
             }
             break;
         
@@ -3185,4 +3192,6 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
             document.getElementById("messageToUser").innerHTML = defaultLog;
                 console.log(document.getElementById("messageToUser").innerHTML);
     }
+    // console.log(userInput)
+    input.value = "";
 }
