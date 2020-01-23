@@ -3070,128 +3070,145 @@ nextBtn.onclick = function nextRound() {
   console.log("next round word:", randomLevel.startingWord);
 }
 
+// Enter key leads to "enter button click"
+let input1 = document.getElementById("wordInput");
+input1.addEventListener("keydown", function (e) {
+  if (e.code === "Enter") {
+    submitEntry();
+    // input1.value = '';
+    // document.getElementById("enterButton").click();
+  }
+});
+
+
+
+
 let wordDiv = document.createElement("div");
                 wordDiv.className = "word";
                 // console.log(document.getElementById("sixLetterWordHolder").appendChild(wordDiv));
 
 
-document.getElementById("enterButton").onclick = function submitEntry(e) {
 
-    const input = document.getElementById("wordInput");
-    var userInput = document.getElementById("wordInput").value;
-    var success6 = "You found the longest word/s!";
-    var success5 = "Five letter word found";
-    var success4 = "Four letter word found";
-    var success3 = "Three letter word found";
-    var defaultLog = "Please enter a word with 3 to 6 of the above letters. Slurs and derogatory words are excluded.";
+
+function submitEntry(e){
+  const input = document.getElementById("wordInput");
+  var userInput = document.getElementById("wordInput").value;
+  var success6 = "You found the longest word/s!";
+  var success5 = "Five letter word found";
+  var success4 = "Four letter word found";
+  var success3 = "Three letter word found";
+  var defaultLog = "Please enter a word with 3 to 6 of the above letters. Slurs and derogatory words are excluded.";
 //   console.log(userInput)
-    const length = userInput.length;
-    const lcUserInput = userInput.toLowerCase();
-    switch (length) {
-        case 6:
-            if(randomLevel.sixLetterWordsFromWordArray.includes(lcUserInput)) {
-              // console.log("user input", userInput)
-                // console.log("random", randomLevel.startingWord)
-                // console.log(success6);
-                document.getElementById("messageToUser").innerHTML = success6;              
-                let wordDiv = document.createElement("div");
-                wordDiv.className = "word";
-                wordDiv.innerHTML = userInput;
-                document.getElementById("sixLetterWordHolder").appendChild(wordDiv);
-                console.log("enter, comparing to", randomLevel.startingWord)
+  const length = userInput.length;
+  const lcUserInput = userInput.toLowerCase();
+  switch (length) {
+      case 6:
+          if(randomLevel.sixLetterWordsFromWordArray.includes(lcUserInput)) {
+            // console.log("user input", userInput)
+              // console.log("random", randomLevel.startingWord)
+              // console.log(success6);
+              document.getElementById("messageToUser").innerHTML = success6;              
+              let wordDiv = document.createElement("div");
+              wordDiv.className = "word";
+              wordDiv.innerHTML = userInput;
+              document.getElementById("sixLetterWordHolder").appendChild(wordDiv);
+              console.log("enter, comparing to", randomLevel.startingWord)
 
-                // let nextRoundButton = document.getElementById("nextRoundButton").innerHTML;
-                // let classes = nextRoundButton.classList;
+              // let nextRoundButton = document.getElementById("nextRoundButton").innerHTML;
+              // let classes = nextRoundButton.classList;
 
-        
-                    // console.log(successTarget)
-                nextBtn.style.display = "block";
-                
-                // successTarget.addEventListener(successTarget, changeVisibilityNextRoundButton)
-                // function changeVisibilityNextRoundButton(e) {
-                //     let nextRoundButton = document.getElementById("nextRoundButton");
-                //     // need "(id)" at end of prev line?
-                    
-                //     if (nextRoundButton.style.display == 'block') {
-                //         nextRoundButton.style.display = 'none';
-                //     }
-                //     else {nextRoundButton.style.display = 'block';
-
-                //     }
-                // }
+      
+                  // console.log(successTarget)
+              nextBtn.style.display = "block";
               
-            } 
-            else {
-                // console.log("Try again.");
-                // console.log("user input", userInput);
-                // console.log("random", randomLevel.startingWord)
-                document.getElementById("messageToUser").innerHTML = "Try again.";
-                console.log(document.getElementById("messageToUser").innerHTML);
-            }
-            break;
-    
-        case 5:
-            if(randomLevel.fiveLetterWordsFromWordArray.includes(lcUserInput)) {
-                console.log(success5);
-                document.getElementById("messageToUser").innerHTML = success5;
-                console.log(document.getElementById("messageToUser").innerHTML);
+              // successTarget.addEventListener(successTarget, changeVisibilityNextRoundButton)
+              // function changeVisibilityNextRoundButton(e) {
+              //     let nextRoundButton = document.getElementById("nextRoundButton");
+              //     // need "(id)" at end of prev line?
+                  
+              //     if (nextRoundButton.style.display == 'block') {
+              //         nextRoundButton.style.display = 'none';
+              //     }
+              //     else {nextRoundButton.style.display = 'block';
 
-                let wordDiv = document.createElement("div");
-                wordDiv.className = "word";
-                wordDiv.innerHTML = userInput;
+              //     }
+              // }
+            
+          } 
+          else {
+              // console.log("Try again.");
+              // console.log("user input", userInput);
+              // console.log("random", randomLevel.startingWord)
+              document.getElementById("messageToUser").innerHTML = "Try again.";
+              console.log(document.getElementById("messageToUser").innerHTML);
+          }
+          break;
+  
+      case 5:
+          if(randomLevel.fiveLetterWordsFromWordArray.includes(lcUserInput)) {
+              console.log(success5);
+              document.getElementById("messageToUser").innerHTML = success5;
+              console.log(document.getElementById("messageToUser").innerHTML);
 
-                document.getElementById("fiveLetterWordHolder").appendChild(wordDiv);
-            }
-            else {
-                // console.log("Try again.");
-                document.getElementById("messageToUser").innerHTML = "Try again.";
-                console.log(document.getElementById("messageToUser").innerHTML);
-            }
-            break;
+              let wordDiv = document.createElement("div");
+              wordDiv.className = "word";
+              wordDiv.innerHTML = userInput;
 
-        case 4:
-            if(randomLevel.fourLetterWordsFromWordArray.includes(lcUserInput)) {
-                console.log(success4);
-                document.getElementById("messageToUser").innerHTML = success4;
-                console.log(document.getElementById("messageToUser").innerHTML);
+              document.getElementById("fiveLetterWordHolder").appendChild(wordDiv);
+          }
+          else {
+              // console.log("Try again.");
+              document.getElementById("messageToUser").innerHTML = "Try again.";
+              console.log(document.getElementById("messageToUser").innerHTML);
+          }
+          break;
 
-                let wordDiv = document.createElement("div");
-                wordDiv.className = "word";
-                wordDiv.innerHTML = userInput;
+      case 4:
+          if(randomLevel.fourLetterWordsFromWordArray.includes(lcUserInput)) {
+              console.log(success4);
+              document.getElementById("messageToUser").innerHTML = success4;
+              console.log(document.getElementById("messageToUser").innerHTML);
 
-                document.getElementById("fourLetterWordHolder").appendChild(wordDiv);
-            } 
-            else {
-                // console.log("Try again.");
-                document.getElementById("messageToUser").innerHTML = "Try again.";
-                console.log(document.getElementById("messageToUser").innerHTML);
-            }
-            break;
+              let wordDiv = document.createElement("div");
+              wordDiv.className = "word";
+              wordDiv.innerHTML = userInput;
 
-        case 3:
-            if(randomLevel.threeLetterWordsFromWordArray.includes(lcUserInput)) {
-                console.log(success3);
-                document.getElementById("messageToUser").innerHTML = success3;
-                console.log(document.getElementById("messageToUser").innerHTML);
+              document.getElementById("fourLetterWordHolder").appendChild(wordDiv);
+          } 
+          else {
+              // console.log("Try again.");
+              document.getElementById("messageToUser").innerHTML = "Try again.";
+              console.log(document.getElementById("messageToUser").innerHTML);
+          }
+          break;
 
-                let wordDiv = document.createElement("div");
-                wordDiv.className = "word";
-                wordDiv.innerHTML = userInput;
+      case 3:
+          if(randomLevel.threeLetterWordsFromWordArray.includes(lcUserInput)) {
+              console.log(success3);
+              document.getElementById("messageToUser").innerHTML = success3;
+              console.log(document.getElementById("messageToUser").innerHTML);
 
-                document.getElementById("threeLetterWordHolder").appendChild(wordDiv);
-            } 
-            else {
-                // console.log("Try again.");
-                document.getElementById("messageToUser").innerHTML = "Try again.";
-                console.log(document.getElementById("messageToUser").innerHTML);
-            }
-            break;
-        
-        default:
-            console.log(defaultLog);
-            document.getElementById("messageToUser").innerHTML = defaultLog;
-                console.log(document.getElementById("messageToUser").innerHTML);
-    }
-    // console.log(userInput)
-    input.value = "";
+              let wordDiv = document.createElement("div");
+              wordDiv.className = "word";
+              wordDiv.innerHTML = userInput;
+
+              document.getElementById("threeLetterWordHolder").appendChild(wordDiv);
+          } 
+          else {
+              // console.log("Try again.");
+              document.getElementById("messageToUser").innerHTML = "Try again.";
+              console.log(document.getElementById("messageToUser").innerHTML);
+          }
+          break;
+      
+      default:
+          console.log(defaultLog);
+          document.getElementById("messageToUser").innerHTML = defaultLog;
+              console.log(document.getElementById("messageToUser").innerHTML);
+  }
+  // console.log(userInput)
+  input.value = "";
 }
+
+
+document.getElementById("enterButton").onclick = submitEntry;
