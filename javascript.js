@@ -2961,18 +2961,30 @@ let twentyRandomSixLetterWordArray = [
 
 let random = gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)]; 
 
-// Function to Get Random Level _________________
+// Function to Get Random Level/ 6-letter word _________________
 
-let randomLevel =
-  gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
+// initialize one array with all the words and one empty (copy the 20array)
+// each turn, a random word
+// slice from array
 
+  // let randomIndex = Math.floor(Math.random() * removedArray.length);
+  // let removedArray;
+  // removedArray = twentyRandomSixLetterWordArray.splice(randomIndex);
+// let randomLevel = gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];;
+let arrayToPickFrom = [...gameWords];
+let randomLevel;
 function getRandomLevel() {
-let randomLevel2 =gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
-let randomLevelStartWord = randomLevel2.startingWord;
-console.log("random2", randomLevelStartWord);
+  // twentyRandomSixLetterWordArray;
+const randomIndex = Math.floor(Math.random() * arrayToPickFrom.length)
+randomLevel = arrayToPickFrom[randomIndex]
+// console.log(randomLevel, " dheufheiuhfqiufhqiufhfiqufq")
+arrayToPickFrom.splice(randomIndex, 1);
+
+console.log("array to pick from", arrayToPickFrom);
+// console.log("original array", twentyRandomSixLetterWordArray);
+
 };
 
-// getRandomLevel();
 
 
 // Function to Scramble Word ________________________
@@ -2991,7 +3003,7 @@ function scrambleWord(string) {
   return scrambledString.join("");
 }
 
-var scrambledWordToDisplay = scrambleWord(randomLevel.startingWord);
+var scrambledWordToDisplay;
 
 document.getElementById(
   "showLettersToWorkWith"
@@ -3033,30 +3045,30 @@ function clearTable(){
 
 
 
-
+// Begin Game Button, onclick __________________________
 
 const beginGameButton = document.getElementById("beginGameButton");
 const letters = document.getElementById("showLettersToWorkWith");
 
 beginGameButton.onclick = function beginGame() {
-
+getRandomLevel()
+scrambledWordToDisplay = scrambleWord(randomLevel.startingWord)
+document.getElementById(
+  "showLettersToWorkWith"
+).innerHTML = scrambledWordToDisplay;
 var inputHolder = document.querySelector("#wordInputHolder");
 var messageUser = document.getElementById("messageToUser");
-console.log("visible")
 inputHolder.style.visibility = "visible";
 messageUser.style.visibility = "visible";
 var entButton = document.getElementById("enterButton");
 entButton.style.display="flex";
-
-
 beginGameButton.style.display = "none";
 letters.style.display="flex";
 
-console.log(document.getElementById("showLettersToWorkWith").innerHTML);
-
-console.log(randomLevel.startingWord);
-
+// scrambleWord(randomLevel.startingWord);
 }
+
+// Next Round Button, onclick ___________________________________
 
 const nextBtn= document.getElementById("nextRoundButton");
 
@@ -3064,14 +3076,15 @@ nextBtn.onclick = function nextRound() {
   document.getElementById("wordInput").value = '';
   clearTable();
   nextBtn.style.display = "none";
-  randomLevel = gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)]; 
+  // 
+  getRandomLevel();
   document.getElementById(
     "showLettersToWorkWith"
   ).innerHTML = scrambleWord(randomLevel.startingWord);
   // console.log('YO', randomLevel.startingWord)
   // console.log('letters to work with', document.getElementById("showLettersToWorkWith").innerHTML);
   console.log(document.getElementById("showLettersToWorkWith").innerHTML);
-  console.log("next round word:", randomLevel.startingWord);
+  console.log(randomLevel.startingWord);
 }
 
 // Enter key leads to "enter button click"
@@ -3094,7 +3107,7 @@ let wordDiv = document.createElement("div");
 
 
 function clearMsgToUser() {
-  console.log('here')
+  // console.log('here')
   document.getElementById("messageToUser").innerHTML = "";
 }
 
@@ -3121,7 +3134,7 @@ function submitEntry(e){
               wordDiv.className = "word";
               wordDiv.innerHTML = userInput;
               document.getElementById("sixLetterWordHolder").appendChild(wordDiv);
-              console.log("enter, comparing to", randomLevel.startingWord)
+              console.log(randomLevel.startingWord)
 
               // let nextRoundButton = document.getElementById("nextRoundButton").innerHTML;
               // let classes = nextRoundButton.classList;
