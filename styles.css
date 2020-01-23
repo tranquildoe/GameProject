@@ -1,3 +1,7 @@
+* {
+    font-family: Verdana, Arial, sans-serif;
+}
+
 #guessedWordContainer {
     border: 2px solid orange;
     height: 50%;
