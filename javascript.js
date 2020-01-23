@@ -2959,7 +2959,7 @@ let twentyRandomSixLetterWordArray = [
 
 // Word from which will display Letters to Work With
 
-
+let random = gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)]; 
 
 // Function to Get Random Level _________________
 
@@ -2969,7 +2969,7 @@ let randomLevel =
 function getRandomLevel() {
 let randomLevel2 =gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
 let randomLevelStartWord = randomLevel2.startingWord;
-console.log(randomLevelStartWord);
+console.log("random2", randomLevelStartWord);
 };
 
 // getRandomLevel();
@@ -2997,9 +2997,9 @@ document.getElementById(
   "showLettersToWorkWith"
 ).innerHTML = scrambledWordToDisplay;
 
-console.log(document.getElementById("showLettersToWorkWith").innerHTML);
+// console.log(document.getElementById("showLettersToWorkWith").innerHTML);
 
-console.log(randomLevel.startingWord);
+// console.log(randomLevel.startingWord);
 
 let table3 = document.getElementById("threeLetterWordHolder");
 let table4 = document.getElementById("fourLetterWordHolder");
@@ -3036,54 +3036,38 @@ const letters = document.getElementById("showLettersToWorkWith");
 
 beginGameButton.onclick = function beginGame() {
 
+var inputHolder = document.querySelector("#wordInputHolder");
+var messageUser = document.getElementById("messageToUser");
+console.log("visible")
+inputHolder.style.visibility = "visible";
+messageUser.style.visibility = "visible";
+var entButton = document.getElementById("enterButton");
+entButton.style.display="flex";
+
+
 beginGameButton.style.display = "none";
 letters.style.display="flex";
 
+console.log(document.getElementById("showLettersToWorkWith").innerHTML);
+
+console.log(randomLevel.startingWord);
 
 }
 
 const nextBtn= document.getElementById("nextRoundButton");
 
 nextBtn.onclick = function nextRound() {
-
-    // Select random level
-  // let randomLevel =
-  // gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
- 
-// let randomSixLetterWordHere = randomLevel.startingWord;
-
   document.getElementById("wordInput").value = '';
-  
-
-
   clearTable();
-
   nextBtn.style.display = "none";
-  
-  // getRandomLevel();
-
-  let randomLevel =
-  gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
-
-  function getRandomLevel() {
-  let randomLevel2 =gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
-  let randomLevelStartWord = randomLevel2.startingWord;
-  console.log(randomLevelStartWord);
-  };
-
-  var scrambledWordToDisplay = scrambleWord(randomLevel.startingWord);
-
+  randomLevel = gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)]; 
   document.getElementById(
     "showLettersToWorkWith"
   ).innerHTML = scrambleWord(randomLevel.startingWord);
-
-// document.getElementById(
-//   "showLettersToWorkWith"
-// ).innerHTML = scrambledWordToDisplay;
+  // console.log('YO', randomLevel.startingWord)
+  // console.log('letters to work with', document.getElementById("showLettersToWorkWith").innerHTML);
   console.log(document.getElementById("showLettersToWorkWith").innerHTML);
-
-  console.log(randomLevel.startingWord);
-
+  console.log("next round word:", randomLevel.startingWord);
 }
 
 let wordDiv = document.createElement("div");
@@ -3101,28 +3085,25 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
     var success3 = "Three letter word found";
     var defaultLog = "Please enter a word with 3 to 6 of the above letters. Slurs and derogatory words are excluded.";
 //   console.log(userInput)
-    const expr = userInput.length;
+    const length = userInput.length;
     const lcUserInput = userInput.toLowerCase();
-    switch (expr) {
+    switch (length) {
         case 6:
             if(randomLevel.sixLetterWordsFromWordArray.includes(lcUserInput)) {
-                let successTarget = randomLevel.sixLetterWordsFromWordArray.includes(lcUserInput);
-                console.log(success6);
-                document.getElementById("messageToUser").innerHTML = success6;
-                console.log(document.getElementById("messageToUser").innerHTML);
-                
-                console.log(document.getElementById("nextRoundButton").innerHTML);
-
+              // console.log("user input", userInput)
+                // console.log("random", randomLevel.startingWord)
+                // console.log(success6);
+                document.getElementById("messageToUser").innerHTML = success6;              
                 let wordDiv = document.createElement("div");
                 wordDiv.className = "word";
                 wordDiv.innerHTML = userInput;
-
                 document.getElementById("sixLetterWordHolder").appendChild(wordDiv);
+                console.log("enter, comparing to", randomLevel.startingWord)
 
                 // let nextRoundButton = document.getElementById("nextRoundButton").innerHTML;
                 // let classes = nextRoundButton.classList;
 
-             
+        
                     // console.log(successTarget)
                 nextBtn.style.display = "block";
 
@@ -3142,6 +3123,9 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
             } 
             else {
                 console.log("Try again.");
+                console.log("user input", userInput);
+                console.log("random", randomLevel.startingWord)
+
             }
             break;
     
@@ -3163,7 +3147,7 @@ document.getElementById("enterButton").onclick = function submitEntry(e) {
             break;
 
         case 4:
-            if(randomLevel.fourLetterWordsFromWordArray.includes(lcUserInput)) {
+            if((randomLevel.startingWord).fourLetterWordsFromWordArray.includes(lcUserInput)) {
                 console.log(success4);
                 document.getElementById("messageToUser").innerHTML = success4;
                 console.log(document.getElementById("messageToUser").innerHTML);
