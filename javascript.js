@@ -3089,6 +3089,10 @@ let wordDiv = document.createElement("div");
 
 
 
+function clearMsgToUser() {
+  console.log('here')
+  document.getElementById("messageToUser").innerHTML = "";
+}
 
 function submitEntry(e){
   const input = document.getElementById("wordInput");
@@ -3101,6 +3105,7 @@ function submitEntry(e){
 //   console.log(userInput)
   const length = userInput.length;
   const lcUserInput = userInput.toLowerCase();
+  setTimeout(clearMsgToUser, 5000);
   switch (length) {
       case 6:
           if(randomLevel.sixLetterWordsFromWordArray.includes(lcUserInput)) {
