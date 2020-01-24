@@ -1,169 +1,211 @@
 * {
-    font-family: Verdana, Arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
 }
 
 #guessedWordContainer {
-    border: 2px solid orange;
-    height: 50%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
+  border: 2px solid orange;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 
 .wordHolder {
-    display: flex;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    /* height: 80vh; */
-    min-height: 80vh;
-    /* max-height: 80vh; */
-    /* flex-direction: row; */
-    /* height: 100%; */
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  /* height: 80vh; */
+  /* min-height: 40%;
+    max-height: 60%; */
+  /* max-height: 80vh; */
+  /* flex-direction: row; */
+  /* height: 100%; */
 }
 
 #threeLetterWordHolder {
-    border: 2px solid brown;
-    width: 25%;
-    flex-direction: column;
-    box-sizing: border-box;
-    /* display: flex; */
-    flex-wrap: wrap;
+  display: grid;
+  border: 2px solid brown;
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  grid-template-rows: repeat(19, 1fr);
+  height: 80%;
+  grid-auto-flow: column;
+  vertical-align: baseline;
 }
 
 #fourLetterWordHolder {
-    border: 2px solid purple;
-    width: 25%;
-    flex-direction: column;
-    box-sizing: border-box;
-    /* display: flex; */
-    flex-wrap: wrap;
-
+  display: grid;
+  border: 2px solid purple;
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  grid-template-rows: repeat(19, 1fr);
+  height: 50%;
+  grid-template-columns: 1fr 1fr;
+  height: 80%;
+  grid-auto-flow: column;
 }
 
 #fiveLetterWordHolder {
-    border: 2px solid lightgreen;
-    width: 25%;
-    flex-direction: column;
-    box-sizing: border-box;
-    /* display: flex; */
-    flex-wrap: wrap;
-
+  border: 2px solid lightgreen;
+  display: grid;
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  grid-template-rows: repeat(19, 1fr);
+  /* height: 50%;
+    grid-template-columns: 1fr 1fr; */
+  height: 80%;
+  grid-auto-flow: column;
 }
 
 #sixLetterWordHolder {
-    border: 2px solid palevioletred;
-    width: 25%;
-    flex-direction: column;
-    box-sizing: border-box;
-    /* display: flex; */
+  border: 2px solid black;
+  display: grid;
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  grid-template-rows: repeat(19, 1fr);
+  /* height: 50%; */
+  /* grid-template-columns: 1fr 1fr; */
+  height: 80%;
+  grid-auto-flow: column;
 }
 
-
 .word {
-    /* direction: flex; */
-    box-sizing: border-box;
-    display: flex;
-    /* flex-direction: row; */
-    border: 1px solid blue;
-    /* height: 25%;
+  /* direction: flex; */
+  /* box-sizing: border-box; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  border: 1px solid blue;
+  /* height: 25%;
     width: 50px; */
-    /* flex-grow: 1; */
-    height: 20px;
-    margin: 0;
-    width: 50%;
+  /* flex-grow: 1; */
+  /* height: 20px; */
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 #wordInput {
-    height: 100%;
-    width: 100%;
-    border: 1px solid magenta;
-    box-sizing: border-box;
-    text-size-adjust: 100%;
-    font-size: 100%;
-    align-self: center;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid magenta; */
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+  font-size: 100%;
+  align-self: center;
 }
 
 #wordInputHolder {
-    height: 80px;
-    width: 40%;
-    border: 10px solid grey;
-    margin-top: 0px;
-    box-sizing: border-box;
-    font-size: 100%;
-    justify-items: center;
-    justify-items: center;
-    visibility: hidden;
+  height: 80px;
+  width: 40%;
+  border: 2px solid grey;
+  margin-top: 0px;
+  box-sizing: border-box;
+  font-size: 100%;
+  justify-items: center;
+  justify-items: center;
+  visibility: hidden;
 }
 
 #wordInputAndButtonHolder {
-    display: flex;
-    justify-content: center;
-    border: 10px solid green;
-    margin: 20px;
-    box-sizing: border-box;
-    flex-direction: column;
-    align-items: center;
-    height: 50vh;
-
-
+  display: flex;
+  justify-content: center;
+  border: 10px solid green;
+  /* margin: 20px; */
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  /* margin-top: 2%; */
+  width: 90%;
 }
 
 #showLettersToWorkWith {
-    height: 80px;
-    width: 40%;
-    border: 10px solid orangered;
-    margin-top: 0px;
-    box-sizing: border-box;
-    font-size: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
+  height: 80px;
+  width: 40%;
+  border: 2px solid grey;
+  margin-top: 0px;
+  box-sizing: border-box;
+  font-size: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 #enterButton {
-    margin: 10px;
-    display: none;
-
+  margin: 10px;
+  display: none;
 }
 
 #messageToUser {
-    height: 40px;
-    width: 40%;
-    border: 1px solid black;
-    margin: 5px;
-    box-sizing: border-box;
-    visibility: hidden;
+  height: 40px;
+  width: 40%;
+  /* border: 1px solid black; */
+  margin: 5px;
+  box-sizing: border-box;
+  visibility: hidden;
 }
 
 #nextRoundButton {
-    display: none;
-    padding: 0 7px 2px;
-    margin: 9.5px;
+  display: none;
+  padding: 0 7px 2px;
+  margin: 9.5px;
 }
 
 #buttonHolder {
-    display: flex;
+  display: flex;
 }
 
 #beginGameButton {
-    display: block;
-    padding: 0 7px 2px;
-    margin: 9.5px;
+  display: block;
+  padding: 0 7px 2px;
+  margin: 9.5px;
 }
 
 #titleContainer {
-    border: 2px solid darkgreen;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
+  border: 2px solid darkgreen;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
 }
 
 .title {
-    width: 16%;
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  box-sizing: border-box;
+  margin-left: 1%;
+  height: 100%;
+  border: 2px solid greenyellow;
+  justify-content: center;
+  align-content: center;
+  text-align: end;
+  /* padding-top: 18%; */
 }
 
-#fourLetters {
+#threeLetters {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#numberOfThrees {
+  flex: 1;
+}
+
+/* #fourLetters {
     margin-left: 7%;
 }
 
@@ -173,4 +215,100 @@
 
 #sixLetters {
     margin-left: 6%;
+} */
+
+#titleAndWordHolder3 {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  height: 20%;
+  /* justify-content: center;
+    align-content: center; */
+  /* text-align: center; */
+  /* align-items: flex-end; */
+}
+
+#titleAndWordHolder4 {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  height: 20%;
+  /* align-items: flex-end; */
+}
+
+#titleAndWordHolder5 {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  height: 20%;
+  /* align-items: flex-end; */
+}
+
+#titleAndWordHolder6 {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  height: 20%;
+  /* align-items: flex-end; */
+}
+
+#threes {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 25%;
+  height: 100%;
+  border: 2px solid red;
+}
+
+#fours {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 25%;
+  height: 100%;
+  border: 2px solid palevioletred;
+}
+
+#fives {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 25%;
+  height: 100%;
+  border: 2px solid olive;
+}
+
+#sixes {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 25%;
+  height: 100%;
+  border: 2px solid mediumpurple;
+}
+
+#fullPage {
+  /* background-color: rgb(196, 247, 200) */
+  display: flex;
+  flex-direction: column;
+}
+
+#bigHolder {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30vh;
+  border: 2px solid magenta;
+  box-sizing: border-box;
+  margin-top: 2%;
+}
+
+#directions {
+  height: 100%;
+  width: 10%;
+  border: 2px solid blue;
+  box-sizing: border-box;
+  margin-top: 2%;
+  visibility: visible;
 }

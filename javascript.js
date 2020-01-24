@@ -2991,10 +2991,10 @@ function inputNumberOfWords() {
   var item5 = document.getElementById("numberOfFives");
   var item4 = document.getElementById("numberOfFours");
   var item3 = document.getElementById("numberOfThrees");
-  var length6 = " (" + randomLevel.sixLetterWordsFromWordArray.length + ")";
-  var length5 = " (" + randomLevel.fiveLetterWordsFromWordArray.length + ")";
-  var length4 = " (" + randomLevel.fourLetterWordsFromWordArray.length + ")";
-  var length3 = " (" + randomLevel.threeLetterWordsFromWordArray.length + ")";
+  var length6 = "(" + randomLevel.sixLetterWordsFromWordArray.length + ")";
+  var length5 = "(" + randomLevel.fiveLetterWordsFromWordArray.length + ")";
+  var length4 = "(" + randomLevel.fourLetterWordsFromWordArray.length + ")";
+  var length3 = "(" + randomLevel.threeLetterWordsFromWordArray.length + ")";
   item6.innerHTML = length6;
   item5.innerHTML = length5;
   item4.innerHTML = length4;
@@ -3120,6 +3120,7 @@ beginGameButton.onclick = function beginGame() {
   entButton.style.display = "flex";
   beginGameButton.style.display = "none";
   letters.style.display = "flex";
+  document.getElementById("directions").style.visibility = "hidden";
   // console.log(randomLevel.startingWord);
   // console.log(randomLevel.sixLetterWordsFromWordArray.length);
 
