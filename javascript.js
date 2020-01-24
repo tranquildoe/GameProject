@@ -2979,13 +2979,14 @@ let twentyRandomSixLetterWordArray = [
 
 // Word from which will display Letters to Work With
 
+let arrayToPickFrom = [...gameWords];
+let randomLevel;
+
 let random =
   gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
 
 // Function to input number of words that can be made from each chosen 6 letter word/ 6 letters, by length of the words.
 function inputNumberOfWords() {
-  const randomIndex = Math.floor(Math.random() * arrayToPickFrom.length);
-  randomLevel = arrayToPickFrom[randomIndex];
   var item6 = document.getElementById("numberOfSixes");
   var item5 = document.getElementById("numberOfFives");
   var item4 = document.getElementById("numberOfFours");
@@ -3002,8 +3003,6 @@ function inputNumberOfWords() {
 
 // Function to Get Random Level/ 6-letter word _________________
 
-let arrayToPickFrom = [...gameWords];
-let randomLevel;
 function getRandomLevel() {
   // twentyRandomSixLetterWordArray;
 
@@ -3130,8 +3129,6 @@ beginGameButton.onclick = function beginGame() {
 
 // Next Round Button, onclick ___________________________________
 
-// console.log(document.getElementById("threeLetters").innerHTML );
-
 const nextBtn = document.getElementById("nextRoundButton");
 
 nextBtn.onclick = function nextRound() {
@@ -3143,7 +3140,7 @@ nextBtn.onclick = function nextRound() {
   document.getElementById("showLettersToWorkWith").innerHTML = scrambleWord(
     randomLevel.startingWord
   );
-  console.log(randomLevel.startingWord);
+  // console.log(randomLevel.startingWord);
   // console.log('letters to work with', document.getElementById("showLettersToWorkWith").innerHTML);
   console.log(document.getElementById("showLettersToWorkWith").innerHTML);
   console.log(randomLevel.startingWord);
@@ -3168,6 +3165,7 @@ function clearMsgToUser() {
   document.getElementById("messageToUser").innerHTML = "";
 }
 
+// Function for clicking Enter Butteon ___________________________
 function submitEntry(e) {
   const input = document.getElementById("wordInput");
   var userInput = document.getElementById("wordInput").value;
