@@ -1976,7 +1976,8 @@ var threeLetterWordsFromWord20Array = threeLetterWordsFromWord20.split("\n");
 
 const gameWords = [
   {
-    number: 1,
+    index: 0,
+    // number: 1,
     startingWord: "formal",
     sixLetterWordsFromWordArray: ["formal"],
     fiveLetterWordsFromWordArray: ["flora", "foram", "molar", "moral"],
@@ -2020,7 +2021,8 @@ const gameWords = [
   },
 
   {
-    number: 2,
+    index: 1,
+    // number: 2,
     startingWord: "spoken",
     sixLetterWordsFromWordArray: ["spoken"],
     fiveLetterWordsFromWordArray: [
@@ -2083,16 +2085,18 @@ const gameWords = [
   },
 
   {
-    number: 3,
+    index: 2,
+    // number: 3,
     startingWord: "detect",
     sixLetterWordsFromWordArray: ["detect"],
-    fiveLetterWordsFromWordArray: [""],
+    fiveLetterWordsFromWordArray: [],
     fourLetterWordsFromWordArray: ["cede", "cete", "deet", "teed"],
     threeLetterWordsFromWordArray: ["cee", "dee", "ted", "tee", "tet"]
   },
 
   {
-    number: 4,
+    index: 3,
+    // number: 4,
     startingWord: "prison",
     sixLetterWordsFromWordArray: ["orpins", "prions", "prison", "spinor"],
     fiveLetterWordsFromWordArray: [
@@ -2156,7 +2160,8 @@ const gameWords = [
   },
 
   {
-    number: 5,
+    index: 4,
+    // number: 5,
     startingWord: "nobody",
     sixLetterWordsFromWordArray: ["nobody"],
     fiveLetterWordsFromWordArray: ["boody"],
@@ -2185,16 +2190,18 @@ const gameWords = [
   },
 
   {
-    number: 6,
+    index: 5,
+    // number: 6,
     startingWord: "church",
     sixLetterWordsFromWordArray: ["church"],
     fiveLetterWordsFromWordArray: ["curch"],
-    fourLetterWordsFromWordArray: [""],
+    fourLetterWordsFromWordArray: [],
     threeLetterWordsFromWordArray: ["cru", "cur", "huh"]
   },
 
   {
-    number: 7,
+    index: 6,
+    // number: 7,
     startingWord: "artist",
     sixLetterWordsFromWordArray: ["artist", "strait", "strati", "traits"],
     fiveLetterWordsFromWordArray: [
@@ -2252,7 +2259,8 @@ const gameWords = [
   },
 
   {
-    number: 8,
+    index: 7,
+    // number: 8,
     startingWord: "hardly",
     sixLetterWordsFromWordArray: ["hardly"],
     fiveLetterWordsFromWordArray: ["hardy", "hydra", "lardy", "lyard"],
@@ -2289,10 +2297,11 @@ const gameWords = [
   },
 
   {
-    number: 9,
+    index: 8,
+    // number: 9,
     startingWord: "moving",
     sixLetterWordsFromWordArray: ["moving"],
-    fiveLetterWordsFromWordArray: [""],
+    fiveLetterWordsFromWordArray: [],
     fourLetterWordsFromWordArray: ["vino"],
     threeLetterWordsFromWordArray: [
       "gin",
@@ -2309,7 +2318,8 @@ const gameWords = [
   },
 
   {
-    number: 10,
+    index: 9,
+    // number: 10,
     startingWord: "wonder",
     sixLetterWordsFromWordArray: ["downer", "wonder"],
     fiveLetterWordsFromWordArray: [
@@ -2374,7 +2384,8 @@ const gameWords = [
   },
 
   {
-    number: 11,
+    index: 10,
+    // number: 11,
     startingWord: "anyone",
     sixLetterWordsFromWordArray: ["anyone"],
     fiveLetterWordsFromWordArray: ["annoy", "anyon"],
@@ -2402,7 +2413,8 @@ const gameWords = [
   },
 
   {
-    number: 12,
+    index: 11,
+    // number: 12,
     startingWord: "mature",
     sixLetterWordsFromWordArray: ["mature"],
     fiveLetterWordsFromWordArray: [
@@ -2470,10 +2482,11 @@ const gameWords = [
   },
 
   {
-    number: 13,
+    index: 12,
+    // number: 13,
     startingWord: "button",
     sixLetterWordsFromWordArray: ["button"],
-    fiveLetterWordsFromWordArray: [""],
+    fiveLetterWordsFromWordArray: [],
     fourLetterWordsFromWordArray: [
       "bott",
       "bout",
@@ -2500,7 +2513,8 @@ const gameWords = [
   },
 
   {
-    number: 14,
+    index: 13,
+    // number: 14,
     startingWord: "repeat",
     sixLetterWordsFromWordArray: ["repeat", "retape"],
     fiveLetterWordsFromWordArray: [
@@ -2571,7 +2585,8 @@ const gameWords = [
   },
 
   {
-    number: 15,
+    index: 14,
+    // number: 15,
     startingWord: "phrase",
     sixLetterWordsFromWordArray: [
       "phrase",
@@ -2684,7 +2699,8 @@ const gameWords = [
   },
 
   {
-    number: 16,
+    index: 15,
+    // number: 16,
     startingWord: "ending",
     sixLetterWordsFromWordArray: ["ending", "ginned"],
     fiveLetterWordsFromWordArray: ["deign", "dinge", "inned"],
@@ -2715,7 +2731,8 @@ const gameWords = [
   },
 
   {
-    number: 17,
+    index: 16,
+    // number: 17,
     startingWord: "bright",
     sixLetterWordsFromWordArray: ["bright"],
     fiveLetterWordsFromWordArray: [
@@ -2747,7 +2764,8 @@ const gameWords = [
   },
 
   {
-    number: 18,
+    index: 17,
+    // number: 18,
     startingWord: "pretty",
     sixLetterWordsFromWordArray: ["pretty"],
     fiveLetterWordsFromWordArray: ["petty"],
@@ -2779,7 +2797,8 @@ const gameWords = [
   },
 
   {
-    number: 19,
+    index: 18,
+    // number: 19,
     startingWord: "struck",
     sixLetterWordsFromWordArray: ["struck", "trucks"],
     fiveLetterWordsFromWordArray: [
@@ -2817,7 +2836,8 @@ const gameWords = [
   },
 
   {
-    number: 20,
+    index: 19,
+    // number: 20,
     startingWord: "sector",
     sixLetterWordsFromWordArray: [
       "corset",
@@ -2959,33 +2979,73 @@ let twentyRandomSixLetterWordArray = [
 
 // Word from which will display Letters to Work With
 
-let random = gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)]; 
+let random =
+  gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
+
+// Function to input number of words that can be made from each chosen 6 letter word/ 6 letters, by length of the words.
+function inputNumberOfWords() {
+  const randomIndex = Math.floor(Math.random() * arrayToPickFrom.length);
+  randomLevel = arrayToPickFrom[randomIndex];
+  var item6 = document.getElementById("numberOfSixes");
+  var item5 = document.getElementById("numberOfFives");
+  var item4 = document.getElementById("numberOfFours");
+  var item3 = document.getElementById("numberOfThrees");
+  var length6 = " (" + randomLevel.sixLetterWordsFromWordArray.length + ")";
+  var length5 = " (" + randomLevel.fiveLetterWordsFromWordArray.length + ")";
+  var length4 = " (" + randomLevel.fourLetterWordsFromWordArray.length + ")";
+  var length3 = " (" + randomLevel.threeLetterWordsFromWordArray.length + ")";
+  item6.innerHTML = length6;
+  item5.innerHTML = length5;
+  item4.innerHTML = length4;
+  item3.innerHTML = length3;
+}
 
 // Function to Get Random Level/ 6-letter word _________________
 
-// initialize one array with all the words and one empty (copy the 20array)
-// each turn, a random word
-// slice from array
-
-  // let randomIndex = Math.floor(Math.random() * removedArray.length);
-  // let removedArray;
-  // removedArray = twentyRandomSixLetterWordArray.splice(randomIndex);
-// let randomLevel = gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];;
 let arrayToPickFrom = [...gameWords];
 let randomLevel;
 function getRandomLevel() {
   // twentyRandomSixLetterWordArray;
-const randomIndex = Math.floor(Math.random() * arrayToPickFrom.length)
-randomLevel = arrayToPickFrom[randomIndex]
-// console.log(randomLevel, " dheufheiuhfqiufhqiufhfiqufq")
-arrayToPickFrom.splice(randomIndex, 1);
 
-console.log("array to pick from", arrayToPickFrom);
+  const randomIndex = Math.floor(Math.random() * arrayToPickFrom.length);
+  randomLevel = arrayToPickFrom[randomIndex];
+
+  // console.log(randomLevel, " dheufheiuhfqiufhqiufhfiqufq")
+  arrayToPickFrom.splice(randomIndex, 1);
+
+  console.log("array to pick from", arrayToPickFrom);
+  //May want the following bracket before the above console.log - double-check
+  inputNumberOfWords();
+}
 // console.log("original array", twentyRandomSixLetterWordArray);
 
-};
+// var textNode = document.appendChild("Number");
+// var item = document.getElementById("threeLetters");
+// console.log(textNode);
+// item.replaceChild(textNode, item.childNodes);
+//   let div = document.createElement("div");
+//   document.getElementById("threeLetters").appendChild(div);
+//   if (document.getElementById("threeLetters").hasChildNodes()) {
+//     var children = document.getElementById("threeLetters").childNodes;
+//     console.log(children);
+//   }
+// }
 
+// inputNumberOfWords();
 
+//
+
+// console.log(length6, length5, length4, length3);
+
+//   document.getElementById("threeLetters").innerHTML += length3;
+//   // if
+//   document.getElementById("fourLetters").innerHTML += length4;
+//   document.getElementById("fiveLetters").innerHTML += length5;
+//   document.getElementById("sixLetters").innerHTML += length6;
+// }
+// inputNumberOfWords();
+// console.log(document.getElementById("threeLetters").innerHTML);
+// console.log(randomLevel.sixLetterWordsFromWordArray.length);
 
 // Function to Scramble Word ________________________
 
@@ -3018,32 +3078,28 @@ let table4 = document.getElementById("fourLetterWordHolder");
 let table5 = document.getElementById("fiveLetterWordHolder");
 let table6 = document.getElementById("sixLetterWordHolder");
 
-
-function clearTable(){
+function clearTable() {
   table3.innerHTML = "";
   table4.innerHTML = "";
   table5.innerHTML = "";
   table6.innerHTML = "";
   // while (table3.firstChild) {
   //   table3.removeChild(table3.firstChild);
-  // } 
+  // }
   // while (table4.firstChild) {
   //   table4.removeChild(table4.firstChild);
-  // } 
+  // }
   // while (table5.firstChild) {
   //   table5.removeChild(table5.firstChild);
-  // } 
+  // }
   // while (table6.firstChild) {
   //   table6.removeChild(table6.firstChild);
-  // } 
-  
+  // }
 }
+// console.log(randomLevel);
 
-
-
-
-
-
+// console.log(randomLevel.threeLetterWordsFromWordArray.length);
+// console.log(document.getElementById("threeLetters").innerHTML);
 
 // Begin Game Button, onclick __________________________
 
@@ -3051,45 +3107,51 @@ const beginGameButton = document.getElementById("beginGameButton");
 const letters = document.getElementById("showLettersToWorkWith");
 
 beginGameButton.onclick = function beginGame() {
-getRandomLevel()
-scrambledWordToDisplay = scrambleWord(randomLevel.startingWord)
-document.getElementById(
-  "showLettersToWorkWith"
-).innerHTML = scrambledWordToDisplay;
-var inputHolder = document.querySelector("#wordInputHolder");
-var messageUser = document.getElementById("messageToUser");
-inputHolder.style.visibility = "visible";
-messageUser.style.visibility = "visible";
-var entButton = document.getElementById("enterButton");
-entButton.style.display="flex";
-beginGameButton.style.display = "none";
-letters.style.display="flex";
+  getRandomLevel();
+  scrambledWordToDisplay = scrambleWord(randomLevel.startingWord);
+  console.log(randomLevel);
+  document.getElementById(
+    "showLettersToWorkWith"
+  ).innerHTML = scrambledWordToDisplay;
+  var inputHolder = document.querySelector("#wordInputHolder");
+  var messageUser = document.getElementById("messageToUser");
+  inputHolder.style.visibility = "visible";
+  messageUser.style.visibility = "visible";
+  var entButton = document.getElementById("enterButton");
+  entButton.style.display = "flex";
+  beginGameButton.style.display = "none";
+  letters.style.display = "flex";
+  // console.log(randomLevel.startingWord);
+  // console.log(randomLevel.sixLetterWordsFromWordArray.length);
 
-// scrambleWord(randomLevel.startingWord);
-}
+  // scrambleWord(randomLevel.startingWord);
+};
+// console.log(randomLevel.sixLetterWordsFromWordArray);
 
 // Next Round Button, onclick ___________________________________
 
-const nextBtn= document.getElementById("nextRoundButton");
+// console.log(document.getElementById("threeLetters").innerHTML );
+
+const nextBtn = document.getElementById("nextRoundButton");
 
 nextBtn.onclick = function nextRound() {
-  document.getElementById("wordInput").value = '';
+  document.getElementById("wordInput").value = "";
   clearTable();
   nextBtn.style.display = "none";
-  // 
+  //
   getRandomLevel();
-  document.getElementById(
-    "showLettersToWorkWith"
-  ).innerHTML = scrambleWord(randomLevel.startingWord);
-  // console.log('YO', randomLevel.startingWord)
+  document.getElementById("showLettersToWorkWith").innerHTML = scrambleWord(
+    randomLevel.startingWord
+  );
+  console.log(randomLevel.startingWord);
   // console.log('letters to work with', document.getElementById("showLettersToWorkWith").innerHTML);
   console.log(document.getElementById("showLettersToWorkWith").innerHTML);
   console.log(randomLevel.startingWord);
-}
+};
 
 // Enter key leads to "enter button click"
 let input1 = document.getElementById("wordInput");
-input1.addEventListener("keydown", function (e) {
+input1.addEventListener("keydown", function(e) {
   if (e.code === "Enter") {
     submitEntry();
     // input1.value = '';
@@ -3097,140 +3159,128 @@ input1.addEventListener("keydown", function (e) {
   }
 });
 
-
-
-
 let wordDiv = document.createElement("div");
-                wordDiv.className = "word";
-                // console.log(document.getElementById("sixLetterWordHolder").appendChild(wordDiv));
-
-
+wordDiv.className = "word";
+// console.log(document.getElementById("sixLetterWordHolder").appendChild(wordDiv));
 
 function clearMsgToUser() {
   // console.log('here')
   document.getElementById("messageToUser").innerHTML = "";
 }
 
-function submitEntry(e){
+function submitEntry(e) {
   const input = document.getElementById("wordInput");
   var userInput = document.getElementById("wordInput").value;
   var success6 = "You found the longest word/s!";
   var success5 = "Five letter word found";
   var success4 = "Four letter word found";
   var success3 = "Three letter word found";
-  var defaultLog = "Please enter a word with 3 to 6 of the above letters. Slurs and derogatory words are excluded.";
-//   console.log(userInput)
+  var defaultLog =
+    "Please enter a word with 3 to 6 of the above letters. Slurs and derogatory words are excluded.";
+  //   console.log(userInput)
   const length = userInput.length;
   const lcUserInput = userInput.toLowerCase();
   setTimeout(clearMsgToUser, 5000);
   switch (length) {
-      case 6:
-          if(randomLevel.sixLetterWordsFromWordArray.includes(lcUserInput)) {
-            // console.log("user input", userInput)
-              // console.log("random", randomLevel.startingWord)
-              // console.log(success6);
-              document.getElementById("messageToUser").innerHTML = success6;              
-              let wordDiv = document.createElement("div");
-              wordDiv.className = "word";
-              wordDiv.innerHTML = userInput;
-              document.getElementById("sixLetterWordHolder").appendChild(wordDiv);
-              console.log(randomLevel.startingWord)
+    case 6:
+      if (randomLevel.sixLetterWordsFromWordArray.includes(lcUserInput)) {
+        // console.log("user input", userInput)
+        // console.log("random", randomLevel.startingWord)
+        // console.log(success6);
+        document.getElementById("messageToUser").innerHTML = success6;
+        let wordDiv = document.createElement("div");
+        wordDiv.className = "word";
+        wordDiv.innerHTML = userInput;
+        document.getElementById("sixLetterWordHolder").appendChild(wordDiv);
+        console.log(randomLevel.startingWord);
 
-              // let nextRoundButton = document.getElementById("nextRoundButton").innerHTML;
-              // let classes = nextRoundButton.classList;
+        // let nextRoundButton = document.getElementById("nextRoundButton").innerHTML;
+        // let classes = nextRoundButton.classList;
 
-      
-                  // console.log(successTarget)
-              nextBtn.style.display = "flex";
-              
-              // successTarget.addEventListener(successTarget, changeVisibilityNextRoundButton)
-              // function changeVisibilityNextRoundButton(e) {
-              //     let nextRoundButton = document.getElementById("nextRoundButton");
-              //     // need "(id)" at end of prev line?
-                  
-              //     if (nextRoundButton.style.display == 'block') {
-              //         nextRoundButton.style.display = 'none';
-              //     }
-              //     else {nextRoundButton.style.display = 'block';
+        // console.log(successTarget)
+        nextBtn.style.display = "flex";
 
-              //     }
-              // }
-            
-          } 
-          else {
-              // console.log("Try again.");
-              // console.log("user input", userInput);
-              // console.log("random", randomLevel.startingWord)
-              document.getElementById("messageToUser").innerHTML = "Try again.";
-              console.log(document.getElementById("messageToUser").innerHTML);
-          }
-          break;
-  
-      case 5:
-          if(randomLevel.fiveLetterWordsFromWordArray.includes(lcUserInput)) {
-              console.log(success5);
-              document.getElementById("messageToUser").innerHTML = success5;
-              console.log(document.getElementById("messageToUser").innerHTML);
+        // successTarget.addEventListener(successTarget, changeVisibilityNextRoundButton)
+        // function changeVisibilityNextRoundButton(e) {
+        //     let nextRoundButton = document.getElementById("nextRoundButton");
+        //     // need "(id)" at end of prev line?
 
-              let wordDiv = document.createElement("div");
-              wordDiv.className = "word";
-              wordDiv.innerHTML = userInput;
+        //     if (nextRoundButton.style.display == 'block') {
+        //         nextRoundButton.style.display = 'none';
+        //     }
+        //     else {nextRoundButton.style.display = 'block';
 
-              document.getElementById("fiveLetterWordHolder").appendChild(wordDiv);
-          }
-          else {
-              // console.log("Try again.");
-              document.getElementById("messageToUser").innerHTML = "Try again.";
-              console.log(document.getElementById("messageToUser").innerHTML);
-          }
-          break;
+        //     }
+        // }
+      } else {
+        // console.log("Try again.");
+        // console.log("user input", userInput);
+        // console.log("random", randomLevel.startingWord)
+        document.getElementById("messageToUser").innerHTML = "Try again.";
+        console.log(document.getElementById("messageToUser").innerHTML);
+      }
+      break;
 
-      case 4:
-          if(randomLevel.fourLetterWordsFromWordArray.includes(lcUserInput)) {
-              console.log(success4);
-              document.getElementById("messageToUser").innerHTML = success4;
-              console.log(document.getElementById("messageToUser").innerHTML);
+    case 5:
+      if (randomLevel.fiveLetterWordsFromWordArray.includes(lcUserInput)) {
+        console.log(success5);
+        document.getElementById("messageToUser").innerHTML = success5;
+        console.log(document.getElementById("messageToUser").innerHTML);
 
-              let wordDiv = document.createElement("div");
-              wordDiv.className = "word";
-              wordDiv.innerHTML = userInput;
+        let wordDiv = document.createElement("div");
+        wordDiv.className = "word";
+        wordDiv.innerHTML = userInput;
 
-              document.getElementById("fourLetterWordHolder").appendChild(wordDiv);
-          } 
-          else {
-              // console.log("Try again.");
-              document.getElementById("messageToUser").innerHTML = "Try again.";
-              console.log(document.getElementById("messageToUser").innerHTML);
-          }
-          break;
+        document.getElementById("fiveLetterWordHolder").appendChild(wordDiv);
+      } else {
+        // console.log("Try again.");
+        document.getElementById("messageToUser").innerHTML = "Try again.";
+        console.log(document.getElementById("messageToUser").innerHTML);
+      }
+      break;
 
-      case 3:
-          if(randomLevel.threeLetterWordsFromWordArray.includes(lcUserInput)) {
-              console.log(success3);
-              document.getElementById("messageToUser").innerHTML = success3;
-              console.log(document.getElementById("messageToUser").innerHTML);
+    case 4:
+      if (randomLevel.fourLetterWordsFromWordArray.includes(lcUserInput)) {
+        console.log(success4);
+        document.getElementById("messageToUser").innerHTML = success4;
+        console.log(document.getElementById("messageToUser").innerHTML);
 
-              let wordDiv = document.createElement("div");
-              wordDiv.className = "word";
-              wordDiv.innerHTML = userInput;
+        let wordDiv = document.createElement("div");
+        wordDiv.className = "word";
+        wordDiv.innerHTML = userInput;
 
-              document.getElementById("threeLetterWordHolder").appendChild(wordDiv);
-          } 
-          else {
-              // console.log("Try again.");
-              document.getElementById("messageToUser").innerHTML = "Try again.";
-              console.log(document.getElementById("messageToUser").innerHTML);
-          }
-          break;
-      
-      default:
-          console.log(defaultLog);
-          document.getElementById("messageToUser").innerHTML = defaultLog;
-              console.log(document.getElementById("messageToUser").innerHTML);
+        document.getElementById("fourLetterWordHolder").appendChild(wordDiv);
+      } else {
+        // console.log("Try again.");
+        document.getElementById("messageToUser").innerHTML = "Try again.";
+        console.log(document.getElementById("messageToUser").innerHTML);
+      }
+      break;
+
+    case 3:
+      if (randomLevel.threeLetterWordsFromWordArray.includes(lcUserInput)) {
+        console.log(success3);
+        document.getElementById("messageToUser").innerHTML = success3;
+        console.log(document.getElementById("messageToUser").innerHTML);
+
+        let wordDiv = document.createElement("div");
+        wordDiv.className = "word";
+        wordDiv.innerHTML = userInput;
+
+        document.getElementById("threeLetterWordHolder").appendChild(wordDiv);
+      } else {
+        // console.log("Try again.");
+        document.getElementById("messageToUser").innerHTML = "Try again.";
+        console.log(document.getElementById("messageToUser").innerHTML);
+      }
+      break;
+
+    default:
+      console.log(defaultLog);
+      document.getElementById("messageToUser").innerHTML = defaultLog;
+      console.log(document.getElementById("messageToUser").innerHTML);
   }
   // console.log(userInput)
   input.value = "";
 }
-
-
 document.getElementById("enterButton").onclick = submitEntry;

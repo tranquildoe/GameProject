@@ -11,11 +11,13 @@
     box-sizing: border-box;
 }
 
-.wordHolder{
+.wordHolder {
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
+    /* height: 80vh; */
     min-height: 80vh;
+    /* max-height: 80vh; */
     /* flex-direction: row; */
     /* height: 100%; */
 }
@@ -69,6 +71,7 @@
     /* flex-grow: 1; */
     height: 20px;
     margin: 0;
+    width: 50%;
 }
 
 #wordInput {
@@ -101,8 +104,8 @@
     box-sizing: border-box;
     flex-direction: column;
     align-items: center;
-    height: 50%;
-    
+    height: 50vh;
+
 
 }
 
@@ -119,9 +122,9 @@
 }
 
 #enterButton {
-        margin: 10px;
-        display: none;
-    
+    margin: 10px;
+    display: none;
+
 }
 
 #messageToUser {
@@ -147,4 +150,27 @@
     display: block;
     padding: 0 7px 2px;
     margin: 9.5px;
+}
+
+#titleContainer {
+    border: 2px solid darkgreen;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    width: 16%;
+}
+
+#fourLetters {
+    margin-left: 7%;
+}
+
+#fiveLetters {
+    margin-left: 7%;
+}
+
+#sixLetters {
+    margin-left: 6%;
 }
