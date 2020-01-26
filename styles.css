@@ -25,7 +25,6 @@
 
 #threeLetterWordHolder {
   display: grid;
-  /* border: 2px solid brown; */
   width: 100%;
   flex-direction: column;
   box-sizing: border-box;
