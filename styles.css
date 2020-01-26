@@ -94,6 +94,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  background-color: white;
 }
 
 #wordInput {
@@ -105,6 +106,7 @@
   /* padding-top: 2vh; */
   /* align-self: center; */
   /* margin-top: -12vh; */
+  background-color: white;
 }
 
 #wordInputHolder {
@@ -145,6 +147,7 @@
   display: none;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 #enterButton {
@@ -168,6 +171,7 @@
   visibility: hidden;
   text-align: center;
   padding-top: 1vh;
+  background-color: white;
 }
 
 #nextRoundButton {
@@ -218,6 +222,7 @@
   text-align: end;
   /* padding-top: 18%; */
   font-size: 1.75vh;
+  background-color: white;
 }
 
 #threeLetters {
@@ -229,13 +234,22 @@
 #numberOfThrees {
   width: 10vh;
   height: 100%;
+  background-color: white;
 }
 
 #numberOfFours {
   width: 10vh;
   height: 100%;
+  background-color: white;
 }
 
+#numberOfFives {
+  background-color: white;
+}
+
+#numberOfSixes {
+  background-color: white;
+}
 /* #fourLetters {
     margin-left: 7%;
 }
@@ -345,4 +359,13 @@
   box-sizing: border-box;
   margin-top: 2%;
   visibility: visible;
+  background-color: white;
+}
+
+body {
+  background-image: url("calmingForest.jpg");
+  background-color: rgb(145, 223, 145);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
