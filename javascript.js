@@ -3121,6 +3121,7 @@ beginGameButton.onclick = function beginGame() {
   beginGameButton.style.display = "none";
   letters.style.display = "flex";
   document.getElementById("directions").style.visibility = "hidden";
+  document.getElementById("startLogo").style.visibility = "hidden";
   // console.log(randomLevel.startingWord);
   // console.log(randomLevel.sixLetterWordsFromWordArray.length);
 

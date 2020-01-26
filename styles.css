@@ -21,6 +21,7 @@
   /* max-height: 80vh; */
   /* flex-direction: row; */
   /* height: 100%; */
+  /* border: 2px solid white; */
 }
 
 #threeLetterWordHolder {
@@ -33,7 +34,7 @@
   grid-template-rows: repeat(19, 1fr);
   height: 80%;
   grid-auto-flow: column;
-  vertical-align: baseline;
+  /* vertical-align: baseline; */
 }
 
 #fourLetterWordHolder {
@@ -45,8 +46,7 @@
   /* display: flex; */
   /* flex-wrap: wrap; */
   grid-template-rows: repeat(19, 1fr);
-  height: 50%;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   height: 80%;
   grid-auto-flow: column;
 }
@@ -93,8 +93,9 @@
   /* height: 20px; */
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 7vh;
   background-color: white;
+  margin-left: 0.5vh;
 }
 
 #wordInput {
@@ -223,6 +224,7 @@
   /* padding-top: 18%; */
   font-size: 1.75vh;
   background-color: white;
+  padding: 1vh;
 }
 
 #threeLetters {
@@ -244,10 +246,14 @@
 }
 
 #numberOfFives {
+  width: 10vh;
+  height: 100%;
   background-color: white;
 }
 
 #numberOfSixes {
+  width: 10vh;
+  height: 100%;
   background-color: white;
 }
 /* #fourLetters {
@@ -267,7 +273,7 @@
   box-sizing: border-box;
   display: flex;
   height: 20%;
-  justify-content: center;
+  /* justify-content: center; */
   align-content: center;
   text-align: center;
   align-items: flex-end;
@@ -360,12 +366,26 @@
   margin-top: 2%;
   visibility: visible;
   background-color: white;
+  padding: 2vh;
 }
 
 body {
-  background-image: url("calmingForest.jpg");
+  background-image: url("calmingForest.png");
   background-color: rgb(145, 223, 145);
   z-index: -1;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+#startLogo {
+  background-image: url("artworkForWordGameOnPoint.jpg");
+  z-index: 1;
+  height: 47.8125vh;
+  width: 56.25vh;
+  background-size: 100% 100%;
+  align-self: center;
+  justify-self: center;
+  margin-top: -45vh;
+  margin-bottom: -5vh;
+  visibility: visible;
 }
