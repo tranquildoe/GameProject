@@ -3,7 +3,6 @@
 }
 
 #guessedWordContainer {
-  /* border: 2px solid orange; */
   height: 58vh;
   width: 100%;
   display: flex;
@@ -15,13 +14,6 @@
   display: flex;
   box-sizing: border-box;
   flex-wrap: wrap;
-  /* height: 80vh; */
-  /* min-height: 40%;
-    max-height: 60%; */
-  /* max-height: 80vh; */
-  /* flex-direction: row; */
-  /* height: 100%; */
-  /* border: 2px solid white; */
 }
 
 #threeLetterWordHolder {
@@ -29,68 +21,42 @@
   width: 100%;
   flex-direction: column;
   box-sizing: border-box;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   grid-template-rows: repeat(19, 1fr);
   height: 80%;
   grid-auto-flow: column;
-  /* vertical-align: baseline; */
 }
 
 #fourLetterWordHolder {
   display: grid;
-  /* border: 2px solid purple; */
   width: 100%;
   flex-direction: column;
   box-sizing: border-box;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   grid-template-rows: repeat(19, 1fr);
-  /* grid-template-columns: 1fr 1fr; */
   height: 80%;
   grid-auto-flow: column;
 }
 
 #fiveLetterWordHolder {
-  /* border: 2px solid lightgreen; */
   display: grid;
   width: 100%;
   flex-direction: column;
   box-sizing: border-box;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   grid-template-rows: repeat(19, 1fr);
-  /* height: 50%;
-    grid-template-columns: 1fr 1fr; */
   height: 80%;
   grid-auto-flow: column;
 }
 
 #sixLetterWordHolder {
-  /* border: 2px solid black; */
   display: grid;
   width: 100%;
   flex-direction: column;
   box-sizing: border-box;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   grid-template-rows: repeat(19, 1fr);
-  /* height: 50%; */
-  /* grid-template-columns: 1fr 1fr; */
   height: 80%;
   grid-auto-flow: column;
 }
 
 .word {
-  /* direction: flex; */
-  /* box-sizing: border-box; */
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* border: 1px solid blue; */
-  /* height: 25%;
-    width: 50px; */
-  /* flex-grow: 1; */
-  /* height: 20px; */
   margin: 0;
   padding: 0;
   width: 7vh;
@@ -104,17 +70,12 @@
   border: 2px solid grey;
   box-sizing: border-box;
   font-size: 6vh;
-  /* padding-top: 2vh; */
-  /* align-self: center; */
-  /* margin-top: -12vh; */
   background-color: white;
 }
 
 #wordInputHolder {
   height: 8vh;
   width: 60%;
-  /* border: 2px solid grey; */
-  /* margin-top: 0px; */
   box-sizing: border-box;
   font-size: 10vh;
   justify-items: center;
@@ -127,15 +88,11 @@
 #wordInputAndButtonHolder {
   display: flex;
   justify-content: center;
-  /* border: 10px solid green; */
-  /* margin: 20px; */
   box-sizing: border-box;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  /* margin-top: 2%; */
   width: 90%;
-  /* margin-left: -10%; */
 }
 
 #showLettersToWorkWith {
@@ -152,7 +109,6 @@
 }
 
 #enterButton {
-  /* margin: 10px; */
   display: none;
   height: 100%;
   width: 40%;
@@ -165,8 +121,6 @@
 #messageToUser {
   height: 8vh;
   width: 60%;
-  /* border: 1px solid black; */
-  /* margin: 5px; */
   font-size: 2.5vh;
   box-sizing: border-box;
   visibility: hidden;
@@ -189,7 +143,6 @@
   display: flex;
   width: 58%;
   height: 6vh;
-  /* font-size: 8vh; */
   margin: 2%;
 }
 
@@ -217,14 +170,12 @@
   box-sizing: border-box;
   margin-left: 1%;
   height: 100%;
-  /* border: 2px solid greenyellow; */
   justify-content: center;
   align-content: center;
   text-align: end;
-  /* padding-top: 18%; */
   font-size: 1.75vh;
   background-color: white;
-  padding: 1vh;
+  padding: 0.25vh;
 }
 
 #threeLetters {
@@ -256,24 +207,12 @@
   height: 100%;
   background-color: white;
 }
-/* #fourLetters {
-    margin-left: 7%;
-}
-
-#fiveLetters {
-    margin-left: 7%;
-}
-
-#sixLetters {
-    margin-left: 6%;
-} */
 
 #titleAndWordHolder3 {
   width: 100%;
   box-sizing: border-box;
   display: flex;
   height: 20%;
-  /* justify-content: center; */
   align-content: center;
   text-align: center;
   align-items: flex-end;
@@ -292,7 +231,6 @@
   box-sizing: border-box;
   display: flex;
   height: 20%;
-  /* align-items: flex-end; */
 }
 
 #titleAndWordHolder6 {
@@ -300,7 +238,6 @@
   box-sizing: border-box;
   display: flex;
   height: 20%;
-  /* align-items: flex-end; */
 }
 
 #threes {
@@ -309,7 +246,6 @@
   box-sizing: border-box;
   width: 25%;
   height: 100%;
-  /* border: 2px solid red; */
 }
 
 #fours {
@@ -318,7 +254,6 @@
   box-sizing: border-box;
   width: 25%;
   height: 100%;
-  /* border: 2px solid palevioletred; */
 }
 
 #fives {
@@ -327,7 +262,6 @@
   box-sizing: border-box;
   width: 25%;
   height: 100%;
-  /* border: 2px solid olive; */
 }
 
 #sixes {
@@ -336,14 +270,11 @@
   box-sizing: border-box;
   width: 25%;
   height: 100%;
-  /* border: 2px solid mediumpurple; */
 }
 
 #fullPage {
-  /* background-color: rgb(196, 247, 200) */
   display: flex;
   flex-direction: column;
-  /* border: 2px solid red; */
   height: 100%;
   margin-bottom: 0;
 }
@@ -353,15 +284,12 @@
   flex-direction: row;
   width: 100%;
   height: 35vh;
-  /* border: 2px solid magenta; */
   box-sizing: border-box;
-  /* margin-top: 2%; */
 }
 
 #directions {
   height: 100%;
   width: 15%;
-  /* border: 2px solid blue; */
   box-sizing: border-box;
   margin-top: 2%;
   visibility: visible;
