@@ -506,7 +506,7 @@ let sixLetterWordArray = sixLetterWords.split("\n");
 var randomSixLetterWord =
   sixLetterWordArray[Math.floor(Math.random() * sixLetterWordArray.length)];
 
-//Beware, these are highly offensive words (slurs and derogatory terms) that I do not agree with the use of. They are listed below only to be filtered from my game.
+//Beware, these are highly offensive words (slurs and derogatory terms) that I do not agree with the use of. They are listed below only to be filtered (removed) from my game.
 let definitelyOffensiveWords = `ABO
 ABOS
 BAYWOP
