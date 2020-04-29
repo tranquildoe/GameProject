@@ -1849,7 +1849,7 @@ let randomLevel;
 let random =
   gameWords[Math.floor(Math.random() * twentyRandomSixLetterWordArray.length)];
 
-// Function to input number of words that can be made from each chosen 6 letter word/ 6 letters, by length of the words.
+// Function to input number of words that can be made from each chosen 6 letter word, by length of the words that can be made.
 function inputNumberOfWords() {
   var item6 = document.getElementById("numberOfSixes");
   var item5 = document.getElementById("numberOfFives");
